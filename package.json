@@ -1,0 +1,52 @@
+{
+  "name": "all-points-burnes",
+  "description": "Personl website built with GatsbyJS",
+  "version": "1.0.0",
+  "author": "Andrew Burnes",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "date-fns": "^1.28.5",
+    "gatsby": "^1.8.12",
+    "gatsby-link": "^1.6.8",
+    "gatsby-plugin-google-analytics": "^1.0.5",
+    "gatsby-plugin-offline": "^1.0.6",
+    "gatsby-plugin-react-helmet": "^1.0.3",
+    "gatsby-plugin-sharp": "^1.6.3",
+    "gatsby-plugin-styled-components": "^1.0.4",
+    "gatsby-plugin-typography": "^1.7.7",
+    "gatsby-remark-copy-linked-files": "^1.5.3",
+    "gatsby-remark-prismjs": "^1.2.2",
+    "gatsby-remark-responsive-iframe": "^1.4.4",
+    "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
+    "gatsby-remark-smartypants": "^1.4.4",
+    "gatsby-source-filesystem": "^1.4.6",
+    "gatsby-transformer-json": "^1.0.4",
+    "gatsby-transformer-remark": "^1.7.3",
+    "gatsby-transformer-sharp": "^1.6.2",
+    "grid-styled": "^2.0.0-10",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "styled-components": "^2.1.2",
+    "styled-system": "^1.0.0-13",
+    "typography": "^0.16.4",
+    "typography-theme-sutro": "^0.15.10",
+    "vivus": "^0.4.2"
+  },
+  "keywords": [
+    "gatsby",
+    "personal site",
+    "blog"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop -o",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "serve": "gatsby build && gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.5.2"
+  }
+}

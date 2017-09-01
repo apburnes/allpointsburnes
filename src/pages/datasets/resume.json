@@ -1,0 +1,37 @@
+[
+  {
+    "type": "academic",
+    "school": "Arizona State University",
+    "degree": "Masters of GIS",
+    "start": "Spring 2010",
+    "end": "Summer 2011"
+  },
+  {
+    "type": "academic",
+    "school": "Arizona State University",
+    "degree": "Bachelors of Urban Planning",
+    "start": "Fall 2004",
+    "end": "Fall 2008"
+  },
+  {
+    "type": "work",
+    "employer": "Todd Photographic",
+    "position": "Cartographer",
+    "start": "September 2009",
+    "end": "October 2010"
+  },
+  {
+    "type": "work",
+    "employer": "Natural Resource Conservation Service",
+    "position": "GIS Analyst",
+    "start": "April 2010",
+    "end": "August 2014"
+  },
+  {
+    "type": "work",
+    "employer": "US Geological Survey",
+    "position": "GIS Architect",
+    "start": "September 2014",
+    "end": "Present"
+  }
+]
