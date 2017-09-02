@@ -1,4 +1,5 @@
 import React from 'react';
+import { rhythm, scale } from '../utils/typography';
 import ContentContainer from '../components/ContentContainer';
 import Section from '../components/Section';
 import CardsSection from '../components/CardsSection';
@@ -18,12 +19,24 @@ const IndexPage = (props) => {
       <Section
         name='about'
       >
-        <p>
+        <p
+          style={{
+            ...scale(-.25),
+            marginTop: rhythm(0),
+            lineHeight: rhythm(.9)
+          }}
+        >
           Originally from the Sonoran Desert, I currently reside along the eastern slope of the Rocky Mountains.
           I studied urban planning as an undergraduate and geographic information systems in graduate work.
           Currently, I work for the US Geologic Survey working on the National Map as a GIS Architect.
         </p>
-        <p>
+        <p
+          style={{
+            ...scale(-.25),
+            marginTop: rhythm(0),
+            lineHeight: rhythm(.9)
+          }}
+        >
           I focus on helping move the organization to Amazon Web Services and building tools with open source software.
           My life goals are to be a life long learner, become fluent in Portuguese (my wife is a brasileira),
           become an amateur architect, and live by the ocean.

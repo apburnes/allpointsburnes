@@ -1,7 +1,7 @@
 allpointsburnes
 ===============
 
-Go to [allpointsburnes.com](allpointsburnes.com)
+Go to [allpointsburnes.com](https://allpointsburnes.com)
 
 ## About
 

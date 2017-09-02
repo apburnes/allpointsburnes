@@ -1,7 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import ContentContainer from '../components/ContentContainer';
 import get from 'lodash/get';
+import ContentContainer from '../components/ContentContainer';
+import { Box } from 'grid-styled';
 import { rhythm, scale } from '../utils/typography';
 import formatDate from '../utils/formatDate';
 
@@ -13,20 +14,37 @@ class BlogPostTemplate extends React.Component {
     return (
       <ContentContainer>
         <Helmet title={`${post.frontmatter.title}| ${siteTitle}`} />
-        <h1>
-          {post.frontmatter.title}
-        </h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {formatDate(post.frontmatter.date)}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Box width={[1]}>
+          <h1
+            style={{
+              marginBottom: rhythm(0)
+            }}
+          >
+            {post.frontmatter.title}
+          </h1>
+        </Box>
+        <Box mb={1} pb={1} width={[1]}>
+          <p
+            style={{
+              ...scale(-.75),
+              marginTop: rhythm(0),
+              color: 'rgb(150,150,150)'
+            }}
+          >
+            {formatDate(post.frontmatter.date)}
+          </p>
+        </Box>
+        <Box my={1} py={1} width={[1]}>
+          <div
+            style={{
+              ...scale(-1 / 3),
+              display: 'block',
+              marginBottom: rhythm(1),
+              marginTop: rhythm(-1),
+              lineHeight: rhythm(.75)
+            }}
+            dangerouslySetInnerHTML={{ __html: post.html }} />
+        </Box>
         <hr
           style={{
             marginBottom: rhythm(1),
