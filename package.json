@@ -1,7 +1,7 @@
 {
   "name": "all-points-burnes",
   "description": "Personl website built with GatsbyJS",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Andrew Burnes",
   "dependencies": {
     "bluebird": "^3.5.0",
