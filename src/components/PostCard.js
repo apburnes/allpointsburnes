@@ -84,15 +84,13 @@ const PostCard = styled(Comp)`
     text-decoration: none;
   }
   :hover .post-flex {
-    background-color: rgb(240,240,240);
+    border: 1px solid rgb(150,150,150);
   }
   .post-flex {
-    border: 1px solid rgb(150,150,150);
-    border-radius: 10px;
-  }
-  div > .post-date {
-    font-size: .7em;
-    color: rgb(100,100,100);
+    border: 1px dashed rgb(200,200,200);
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 10px 10px 0px rgb(240,240,240);
   }
   div > h4,h5,p {
     margin: 0;

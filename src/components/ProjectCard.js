@@ -86,15 +86,12 @@ const ProjectCard = styled(Comp)`
   .post-flex {
     border: 1px dashed rgb(200,200,200);
     height: 150px;
-  }
-  div > .post-date {
-    font-size: .7em;
-    color: rgb(100,100,100);
+    background-color: #fff;
+    box-shadow: 10px 10px 0px rgb(240,240,240);
   }
   div > h4,h5,p {
     margin: 0;
     padding: 0;
-    line-height:
   }
 `;
 

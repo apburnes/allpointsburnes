@@ -127,13 +127,11 @@ const Comp = ({
 
 const ResumeCard = styled(Comp)`
   color: black;
+  background-color: #fff;
+  box-shadow: 10px 10px 0px rgb(240,240,240);
   .post-flex {
-    border: 1px dashed rgb(200,200,200);
+    border: 1px solid rgb(200,200,200);
     height: 125px;
-  }
-  div > .post-date {
-    font-size: .7em;
-    color: rgb(100,100,100);
   }
   div > h4,h5,p {
     margin: 0;
