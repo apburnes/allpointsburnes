@@ -2,12 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import academic from '../../static/academic.svg';
 import code from '../../static/code.svg';
+import download from '../../static/download.svg';
 import talk from '../../static/talk.svg';
 import website from '../../static/website.svg';
 import work from '../../static/work.svg';
 
 const icons = {
   academic,
+  download,
   code,
   talk,
   website,

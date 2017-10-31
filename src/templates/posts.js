@@ -37,7 +37,7 @@ class BlogPostTemplate extends React.Component {
         <Box my={1} py={1} width={[1]}>
           <div
             style={{
-              ...scale(-1 / 3),
+              ...scale(0),
               display: 'block',
               marginBottom: rhythm(1),
               marginTop: rhythm(-1),

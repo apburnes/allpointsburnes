@@ -25,6 +25,7 @@ const Comp = ({children, className, name, to}) => {
     <Flex
       align='center'
       column
+      py={[1,2,3]}
     >
       <Box
         className={className}

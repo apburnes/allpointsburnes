@@ -3,6 +3,7 @@ import { rhythm, scale } from '../utils/typography';
 import ContentContainer from '../components/ContentContainer';
 import Section from '../components/Section';
 import CardsSection from '../components/CardsSection';
+import Download from '../components/elements/Download';
 import Footer from '../components/Footer';
 import PostCard from '../components/PostCard';
 import ProjectCard from '../components/ProjectCard';
@@ -21,7 +22,7 @@ const IndexPage = (props) => {
       >
         <p
           style={{
-            ...scale(-.25),
+            ...scale(0),
             marginTop: rhythm(0),
             lineHeight: rhythm(.9)
           }}
@@ -32,7 +33,7 @@ const IndexPage = (props) => {
         </p>
         <p
           style={{
-            ...scale(-.25),
+            ...scale(0),
             marginTop: rhythm(0),
             lineHeight: rhythm(.9)
           }}
@@ -57,6 +58,10 @@ const IndexPage = (props) => {
         name='resume'
       >
         <Resume data={allResumeJson} />
+        <Download
+          url='http://yadayadayadadocs.s3-us-west-2.amazonaws.com/resume/burnes-resume.pdf'
+          text='Download resume pdf'
+        />
       </Section>
       <Footer />
     </ContentContainer>
