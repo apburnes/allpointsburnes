@@ -15,10 +15,10 @@
   },
   {
     "type": "work",
-    "employer": "Todd Photographic",
-    "position": "Cartographer",
-    "start": "September 2009",
-    "end": "October 2010"
+    "employer": "US Geological Survey",
+    "position": "GIS Architect",
+    "start": "September 2014",
+    "end": "Present"
   },
   {
     "type": "work",
@@ -29,9 +29,9 @@
   },
   {
     "type": "work",
-    "employer": "US Geological Survey",
-    "position": "GIS Architect",
-    "start": "September 2014",
-    "end": "Present"
+    "employer": "Todd Photographic",
+    "position": "Cartographer",
+    "start": "September 2009",
+    "end": "October 2010"
   }
 ]

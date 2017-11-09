@@ -10,7 +10,6 @@ const Comp = ({className, text='Download', url='/'}) => (
     <a
       href={url}
       target='_blank'
-      file={url.split('/').slice(-1)[0]}
       download
     >
       <div>

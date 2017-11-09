@@ -22,12 +22,12 @@ const Comp = ({
   return (
     <Box
       className={className}
-      width={[1,1/2]}
+      width={[1]}
+      my={2}
     >
       <Flex
         align='center'
         column
-        className='post-flex'
         p={1}
       >
         <Box
@@ -42,6 +42,7 @@ const Comp = ({
         </Box>
         <Box
           width={[1]}
+          className='post-flex'
         >
           <Flex
             align='center'
@@ -82,7 +83,7 @@ const Comp = ({
             <Box>
               <h6
                 style={{
-                  ...scale(-1 / 3),
+                  ...scale(-1 / 2),
                   lineHeight: rhythm(1/2),
                   margin: 0,
                   padding: 0,
@@ -97,7 +98,7 @@ const Comp = ({
             >
               <p
                 style={{
-                  ...scale(-1 / 2),
+                  ...scale(-3/5),
                   lineHeight: rhythm(1/2),
                   margin: 0,
                   padding: 0
@@ -109,7 +110,7 @@ const Comp = ({
             <Box>
               <h6
                 style={{
-                  ...scale(-1 / 3),
+                  ...scale(-1 / 2),
                   lineHeight: rhythm(1/2),
                   margin: 0,
                   padding: 0,
@@ -129,10 +130,6 @@ const ResumeCard = styled(Comp)`
   color: black;
   background-color: #fff;
   box-shadow: 10px 10px 0px rgb(240,240,240);
-  .post-flex {
-    border: 1px solid rgb(200,200,200);
-    height: 125px;
-  }
   div > h4,h5,p {
     margin: 0;
     padding: 0;

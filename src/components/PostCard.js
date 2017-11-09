@@ -12,6 +12,7 @@ const Comp = ({className, frontmatter}) => {
   return (
     <Box
       width={[1]}
+      py={1}
     >
       <Link
         to={path}
@@ -27,6 +28,8 @@ const Comp = ({className, frontmatter}) => {
           <Box
             width={[1]}
             px={[1,2]}
+            pt={1}
+            pb={2}
           >
             <Flex
               align='center'
@@ -34,7 +37,8 @@ const Comp = ({className, frontmatter}) => {
             >
               <h4
                 style={{
-                  ...scale(-1 / 4)
+                  ...scale(-1 / 4),
+                  lineHeight: rhythm(2/3)
                 }}
               >
                 {title}
@@ -54,12 +58,12 @@ const Comp = ({className, frontmatter}) => {
           <Box
             width={[1]}
             px={[1,2]}
-            pb={1}
+            pb={2}
           >
             <p
               style={{
                 ...scale(-1 / 3),
-                lineHeight: rhythm(.8)
+                lineHeight: rhythm(1/2)
               }}
             >
               {description}
@@ -88,7 +92,6 @@ const PostCard = styled(Comp)`
   }
   .post-flex {
     border: 1px dashed rgb(200,200,200);
-    height: 100px;
     background-color: #fff;
     box-shadow: 10px 10px 0px rgb(240,240,240);
   }

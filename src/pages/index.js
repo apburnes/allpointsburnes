@@ -5,15 +5,14 @@ import Section from '../components/Section';
 import CardsSection from '../components/CardsSection';
 import Download from '../components/elements/Download';
 import Footer from '../components/Footer';
+import Resume from '../components/Resume';
 import PostCard from '../components/PostCard';
 import ProjectCard from '../components/ProjectCard';
-import ResumeCard from '../components/ResumeCard';
 
 const IndexPage = (props) => {
   const { allMarkdownRemark, allProjectsJson, allResumeJson } = props.data;
   const Posts = CardsSection(PostCard);
   const Projects = CardsSection(ProjectCard);
-  const Resume = CardsSection(ResumeCard);
 
   return (
     <ContentContainer>
@@ -57,7 +56,7 @@ const IndexPage = (props) => {
       <Section
         name='resume'
       >
-        <Resume data={allResumeJson} />
+        <Resume edges={allResumeJson.edges} />
         <Download
           url='http://yadayadayadadocs.s3-us-west-2.amazonaws.com/resume/burnes-resume.pdf'
           text='Download resume pdf'
