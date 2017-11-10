@@ -1,10 +1,17 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
+import styled from 'styled-components';
 import ContentContainer from '../components/ContentContainer';
 import { Box } from 'grid-styled';
 import { rhythm, scale } from '../utils/typography';
 import formatDate from '../utils/formatDate';
+
+const Content = styled(ContentContainer)`
+  .gatsby-highlight {
+    padding: 2em 0 2em 0;
+  }
+`;
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -12,7 +19,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
 
     return (
-      <ContentContainer>
+      <Content>
         <Helmet title={`${post.frontmatter.title}| ${siteTitle}`} />
         <Box width={[1]}>
           <h1
@@ -50,7 +57,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-      </ContentContainer>
+      </Content>
     )
   }
 }
