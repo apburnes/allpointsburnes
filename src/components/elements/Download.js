@@ -9,6 +9,7 @@ const Comp = ({className, text='Download', url='/'}) => (
   >
     <a
       href={url}
+      rel='noopener noreferrer'
       target='_blank'
       download
     >

@@ -23,14 +23,17 @@ const Comp = ({className}) => (
         <h4>Built thanks to...</h4>
         <a
           href='https://facebook.github.io/react/'
+          rel='noopener noreferrer'
           target='_blank'
         >ReactJS</a>
         <a
           href='https://www.gatsbyjs.org/'
+          rel='noopener noreferrer'
           target='_blank'
         >GatsbyJS</a>
         <a
           href='https://www.netlify.com/'
+          rel='noopener noreferrer'
           target='_blank'
         >Netlify</a>
       </Flex>
@@ -44,6 +47,7 @@ const Comp = ({className}) => (
         <h4>Site source code at...</h4>
         <a
           href='https://github.com/apburnes/allpointsburnes'
+          rel='noopener noreferrer'
           target='_blank'
         >Github</a>
       </Flex>

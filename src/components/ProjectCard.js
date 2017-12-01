@@ -14,6 +14,7 @@ const Comp = ({className, description, link, name, type}) => {
     <a
       href={link}
       className={className}
+      rel='noopener noreferrer'
       target='_blank'
     >
       <Flex
