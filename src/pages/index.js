@@ -26,9 +26,10 @@ const IndexPage = (props) => {
             lineHeight: rhythm(.9)
           }}
         >
-          Originally from the Sonoran Desert, I currently reside along the eastern slope of the Rocky Mountains.
-          I studied urban planning as an undergraduate and geographic information systems in graduate work.
-          Currently, I work for the US Geologic Survey working on the National Map as a GIS Architect.
+          After a good stint along the Front Range, I am back residing in my Sonoran Desert homeland.
+          I studied urban planning and geographic information systems but have parlayed my experiences from
+          natural resource geography into engineering. Currently, you can call me an Innovations Specialist
+          with 18F.
         </p>
         <p
           style={{
@@ -37,9 +38,9 @@ const IndexPage = (props) => {
             lineHeight: rhythm(.9)
           }}
         >
-          I focus on helping move the organization to Amazon Web Services and building tools with open source software.
-          My life goals are to be a life long learner, become fluent in Portuguese (my wife is a brasileira),
-          become an amateur architect, and live by the ocean.
+          I focus on helping government organizations build better tools for the public with open source
+          software and transparent workflows.  Some life goals are to continually learn, become fluent in
+          Portuguese (minha esposa é brasileira), build cool things, and live by the ocean.
         </p>
       </Section>
       <Section

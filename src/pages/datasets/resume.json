@@ -15,10 +15,17 @@
   },
   {
     "type": "work",
+    "employer": "18F",
+    "position": "Innovations Specialist",
+    "start": "March 2018",
+    "end": "Present"
+  },
+  {
+    "type": "work",
     "employer": "US Geological Survey",
     "position": "GIS Architect",
     "start": "September 2014",
-    "end": "Present"
+    "end": "March 2018"
   },
   {
     "type": "work",
