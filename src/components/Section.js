@@ -1,57 +1,40 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Link from 'gatsby-link';
-import { Box, Flex } from 'grid-styled';
+import React from 'react'
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { Box, Flex } from '@rebass/grid'
 
-const Comp = ({children, className, name, to}) => {
+const Comp = ({ children, className, name, to }) => {
   const headerLink = () => {
     if (to) {
       return (
-        <Link
-          to={to}
-        >
+        <Link to={to}>
           <h2>{name.toUpperCase()}</h2>
         </Link>
-      );
+      )
     }
 
-    return (
-      <h2>{name.toUpperCase()}</h2>
-    );
+    return <h2>{name.toUpperCase()}</h2>
   }
 
   return (
-    <Flex
-      align='center'
-      column
-      py={[1,2,3]}
-    >
-      <Box
-        className={className}
-        py={1}
-        width={[1]}
-      >
+    <Flex alignItems="center" flexDirection="column" py={[1, 2, 3]}>
+      <Box className={className} py={1} width={[1]}>
         {headerLink()}
       </Box>
-      <Box
-        py={1}
-        width={[1]}
-      >
+      <Box py={1} width={[1]}>
         {children}
       </Box>
     </Flex>
-)};
+  )
+}
 
 Comp.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.array
-  ]),
+  children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   className: PropTypes.string,
   name: PropTypes.string,
-  to: PropTypes.string
-};
+  to: PropTypes.string,
+}
 
 const Section = styled(Comp)`
   border-bottom: 2px solid black;
@@ -63,7 +46,7 @@ const Section = styled(Comp)`
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: rgb(55,55,55);
+    color: rgb(55, 55, 55);
     & h2 {
       margin: 0;
       padding: 0;
@@ -72,6 +55,6 @@ const Section = styled(Comp)`
       text-decoration: none;
     }
   }
-`;
+`
 
-export default Section;
+export default Section

@@ -1,20 +1,19 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
-import Container from '../components/Container';
-import Header from '../components/Header';
-import HomeBanner from '../components/HomeBanner';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import Container from './Container'
+import Header from './Header'
+import HomeBanner from './HomeBanner'
 
 class TemplateWrapper extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.getHeader = this.getHeader.bind(this);
+    this.getHeader = this.getHeader.bind(this)
   }
 
   getHeader() {
-    const { pathname } = this.props.location;
+    const { pathname } = this.props.location
 
     if (pathname === '/') return <HomeBanner />
     return <Header pathname={pathname} />
@@ -32,16 +31,16 @@ class TemplateWrapper extends Component {
         />
         <Container>
           {this.getHeader()}
-          {this.props.children()}
+          {this.props.children}
         </Container>
       </div>
-    );
+    )
   }
 }
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-  location: PropTypes.object
+  children: PropTypes.object,
+  location: PropTypes.object,
 }
 
-export default TemplateWrapper;
+export default TemplateWrapper

@@ -1,43 +1,34 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Icon from '../graphics/Icon';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import Icon from '../graphics/Icon'
 
-const Comp = ({className, text='Download', url='/'}) => (
-  <div
-    className={className}
-  >
-    <a
-      href={url}
-      rel='noopener noreferrer'
-      target='_blank'
-      download
-    >
+const Comp = ({ className, text = 'Download', url = '/' }) => (
+  <div className={className}>
+    <a href={url} rel="noopener noreferrer" target="_blank" download>
       <div>
         {text}
-        <Icon
-          type='download'
-        />
+        <Icon type="download" />
       </div>
     </a>
   </div>
-);
+)
 
 const Download = styled(Comp)`
   margin-top: 2em;
   padding: 1em;
   float: right;
   div & a {
-    font-family: Source Sans Pro,sans-serif;
+    font-family: Source Sans Pro, sans-serif;
     text-transform: uppercase;
     font-weight: 200;
-    font-size: .8em;
+    font-size: 0.8em;
     color: black;
     &:hover {
-      text-decoration: none
+      text-decoration: none;
     }
     & div:hover {
-      border-bottom: 1px solid rgb(150,150,150)
+      border-bottom: 1px solid rgb(150, 150, 150);
     }
     & div img {
       position: relative;
@@ -45,6 +36,12 @@ const Download = styled(Comp)`
       padding-left: 5px;
     }
   }
-`;
+`
 
-export default Download;
+Download.propTypes = {
+  className: PropTypes.string,
+  text: PropTypes.string,
+  url: PropTypes.string,
+}
+
+export default Download

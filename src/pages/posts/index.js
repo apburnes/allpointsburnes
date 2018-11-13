@@ -1,27 +1,28 @@
-import React from 'react';
-import ContentContainer from '../../components/ContentContainer';
-import Section from '../../components/Section';
-import CardsSection from '../../components/CardsSection';
-import PostCard from '../../components/PostCard';
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../../components/Layout'
+import ContentContainer from '../../components/ContentContainer'
+import Section from '../../components/Section'
+import CardsSection from '../../components/CardsSection'
+import PostCard from '../../components/PostCard'
 import 'prismjs/themes/prism-solarizedlight.css'
 
-const PostPage = (props) => {
-  const { allMarkdownRemark } = props.data;
-  const Posts = CardsSection(PostCard);
+const PostPage = props => {
+  const { allMarkdownRemark } = props.data
+  const Posts = CardsSection(PostCard)
 
   return (
-    <ContentContainer>
-      <Section
-        name='posts'
-        to='/posts/'
-      >
-        <Posts data={allMarkdownRemark} />
-      </Section>
-    </ContentContainer>
-  );
+    <Layout location={props.location}>
+      <ContentContainer>
+        <Section name="posts" to="/posts/">
+          <Posts data={allMarkdownRemark} />
+        </Section>
+      </ContentContainer>
+    </Layout>
+  )
 }
 
-export default PostPage;
+export default PostPage
 
 export const pageQuery = graphql`
   query PostsQuery {
@@ -30,7 +31,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           frontmatter {

@@ -1,11 +1,11 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react'
+import { Link } from 'gatsby'
+import Layout from '../components/Layout'
 
-const NotFoundPage = () =>
-  <div>
-    <Link to='/'>
+export default ({ location }) => (
+  <Layout location={location}>
+    <Link to="/">
       <h1>NOT FOUND</h1>
     </Link>
-  </div>
-
-export default NotFoundPage;
+  </Layout>
+)

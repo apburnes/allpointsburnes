@@ -1,79 +1,65 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Box, Flex } from 'grid-styled';
-import { rhythm, scale } from '../utils/typography';
-import Icon from './graphics/Icon';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { Box, Flex } from '@rebass/grid'
+import { rhythm, scale } from '../utils/typography'
+import Icon from './graphics/Icon'
 
-const Comp = ({className, description, link, name, type}) => {
-
+const Comp = ({ className, description, link, name, type }) => {
   return (
-  <Box
-    width={[1,1/2]}
-  >
-    <a
-      href={link}
-      className={className}
-      rel='noopener noreferrer'
-      target='_blank'
-    >
-      <Flex
-        align='center'
-        column
-        className='post-flex'
-        p={1}
+    <Box width={[1, 1 / 2]}>
+      <a
+        href={link}
+        className={className}
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        <Box
-          width={[1]}
+        <Flex
+          alignItems="center"
+          flexDirection="column"
+          className="post-flex"
+          p={1}
         >
-          <Flex
-            align='center'
-            justify='flex-end'
-          >
-           <Icon type={type} />
-          </Flex>
-        </Box>
-        <Box
-          width={[1]}
-        >
-          <Flex
-            align='center'
-            justify='flex-start'
-          >
-            <h4
+          <Box width={[1]}>
+            <Flex alignItems="center" justifyContent="flex-end">
+              <Icon type={type} />
+            </Flex>
+          </Box>
+          <Box width={[1]}>
+            <Flex alignItems="center" justifyContent="flex-start">
+              <h4
+                style={{
+                  ...scale(-1 / 4),
+                  lineHeight: rhythm(1 / 2),
+                  marginBottom: rhythm(1 / 8),
+                }}
+              >
+                {name.toUpperCase()}
+              </h4>
+            </Flex>
+          </Box>
+          <Box width={[1]}>
+            <p
               style={{
-                ...scale(-1 / 4),
-                lineHeight: rhythm(1/2),
-                marginBottom: rhythm(1/8)
+                ...scale(-1 / 3),
+                lineHeight: rhythm(1 / 2),
               }}
             >
-              {name.toUpperCase()}
-            </h4>
-          </Flex>
-        </Box>
-        <Box
-          width={[1]}
-        >
-          <p
-            style={{
-              ...scale(-1 / 3),
-              lineHeight: rhythm(1/2)
-            }}
-          >
-            {description}
-          </p>
-        </Box>
-      </Flex>
-    </a>
-  </Box>
-)};
+              {description}
+            </p>
+          </Box>
+        </Flex>
+      </a>
+    </Box>
+  )
+}
 
 Comp.propTypes = {
   className: PropTypes.string,
   description: PropTypes.string,
   link: PropTypes.string,
   name: PropTypes.string,
-  type: PropTypes.string
+  type: PropTypes.string,
 }
 
 const ProjectCard = styled(Comp)`
@@ -82,18 +68,20 @@ const ProjectCard = styled(Comp)`
     text-decoration: none;
   }
   :hover .post-flex {
-    border: 1px solid rgb(150,150,150);
+    border: 1px solid rgb(150, 150, 150);
   }
   .post-flex {
-    border: 1px dashed rgb(200,200,200);
+    border: 1px dashed rgb(200, 200, 200);
     height: 150px;
     background-color: #fff;
-    box-shadow: 10px 10px 0px rgb(240,240,240);
+    box-shadow: 10px 10px 0px rgb(240, 240, 240);
   }
-  div > h4,h5,p {
+  div > h4,
+  h5,
+  p {
     margin: 0;
     padding: 0;
   }
-`;
+`
 
-export default ProjectCard;
+export default ProjectCard

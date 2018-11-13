@@ -1,107 +1,76 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Box, Flex } from 'grid-styled';
-import { rhythm, scale } from '../utils/typography';
-import Icon from './graphics/Icon';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { Box, Flex } from '@rebass/grid'
+import { rhythm, scale } from '../utils/typography'
+import Icon from './graphics/Icon'
 
 const Comp = ({
-    className,
-    employer,
-    end,
-    degree,
-    position,
-    school,
-    start,
-    type
-  }) => {
-
-  const title = position ? position : degree;
-  const place = employer ? employer : school;
+  className,
+  employer,
+  end,
+  degree,
+  position,
+  school,
+  start,
+  type,
+}) => {
+  const title = position ? position : degree
+  const place = employer ? employer : school
 
   return (
-    <Box
-      className={className}
-      width={[1]}
-      my={2}
-    >
-      <Flex
-        align='center'
-        column
-        p={1}
-      >
-        <Box
-          width={[1]}
-        >
-          <Flex
-            align='center'
-            justify='flex-end'
-          >
-           <Icon type={type} />
+    <Box className={className} width={[1]} my={2}>
+      <Flex alignItems="center" flexDirection="column" p={1}>
+        <Box width={[1]}>
+          <Flex alignItems="center" justifyContent="flex-end">
+            <Icon type={type} />
           </Flex>
         </Box>
-        <Box
-          width={[1]}
-          className='post-flex'
-        >
-          <Flex
-            align='center'
-            justify='flex-start'
-          >
+        <Box width={[1]} className="post-flex">
+          <Flex alignItems="center" justifyContent="flex-start">
             <h4
               style={{
                 ...scale(-1 / 4),
-                lineHeight: rhythm(1/2),
-                marginBottom: rhythm(1/8)
+                lineHeight: rhythm(1 / 2),
+                marginBottom: rhythm(1 / 8),
               }}
             >
               {title.toUpperCase()}
             </h4>
           </Flex>
         </Box>
-        <Box
-          width={[1]}
-        >
+        <Box width={[1]}>
           <p
             style={{
               ...scale(-1 / 3),
-              lineHeight: rhythm(1/2)
+              lineHeight: rhythm(1 / 2),
             }}
           >
             {place}
           </p>
         </Box>
-        <Box
-          pt={1}
-          width={[1]}
-        >
-          <Flex
-            align='center'
-            justify='flex-end'
-            wrap
-          >
+        <Box pt={1} width={[1]}>
+          <Flex alignItems="center" justifyContent="flex-end" flexWrap="wrap">
             <Box>
               <h6
                 style={{
                   ...scale(-1 / 2),
-                  lineHeight: rhythm(1/2),
+                  lineHeight: rhythm(1 / 2),
                   margin: 0,
                   padding: 0,
-                  float: 'right'
+                  float: 'right',
                 }}
               >
                 {start}
               </h6>
             </Box>
-            <Box
-              px={1}
-            >
+            <Box px={1}>
               <p
                 style={{
-                  ...scale(-3/5),
-                  lineHeight: rhythm(1/2),
+                  ...scale(-3 / 5),
+                  lineHeight: rhythm(1 / 2),
                   margin: 0,
-                  padding: 0
+                  padding: 0,
                 }}
               >
                 to
@@ -111,10 +80,10 @@ const Comp = ({
               <h6
                 style={{
                   ...scale(-1 / 2),
-                  lineHeight: rhythm(1/2),
+                  lineHeight: rhythm(1 / 2),
                   margin: 0,
                   padding: 0,
-                  float: 'right'
+                  float: 'right',
                 }}
               >
                 {end}
@@ -123,18 +92,32 @@ const Comp = ({
           </Flex>
         </Box>
       </Flex>
-    </Box>);
-};
+    </Box>
+  )
+}
 
 const ResumeCard = styled(Comp)`
   color: black;
   background-color: #fff;
-  box-shadow: 10px 10px 0px rgb(240,240,240);
-  div > h4,h5,p {
+  box-shadow: 10px 10px 0px rgb(240, 240, 240);
+  div > h4,
+  h5,
+  p {
     margin: 0;
     padding: 0;
-    line-height:
+    line-height: ;
   }
-`;
+`
 
-export default ResumeCard;
+ResumeCard.propTypes = {
+  className: PropTypes.string,
+  employer: PropTypes.string,
+  end: PropTypes.string,
+  degree: PropTypes.string,
+  position: PropTypes.string,
+  school: PropTypes.string,
+  start: PropTypes.string,
+  type: PropTypes.string,
+}
+
+export default ResumeCard
