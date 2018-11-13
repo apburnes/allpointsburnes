@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import Vivus from 'vivus'
-const svgLink = require('../../static/logo.svg')
+import svgLink from '../../static/logo.svg'
 
 export default class SvgLogo extends Component {
   constructor(props) {
     super(props)
-    this.svg = null
+    this.state = {
+      svg: null,
+    }
   }
+
   componentDidMount() {
     const logo = new Vivus(
       'svg-logo',
@@ -19,6 +22,7 @@ export default class SvgLogo extends Component {
     )
 
     logo.play()
+    logo.finish()
     this.setState({ svg: logo })
   }
 

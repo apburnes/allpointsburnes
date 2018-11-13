@@ -34,7 +34,7 @@
     "styled-system": "^3.1.11",
     "typography": "^0.16.17",
     "typography-theme-sutro": "^0.15.10",
-    "vivus": "^0.4.2"
+    "vivus": "^0.4.4"
   },
   "keywords": [
     "gatsby",

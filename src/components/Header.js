@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Box, Flex } from '@rebass/grid'
+import ContentContainer from './ContentContainer'
 import HeaderLink from './elements/HeaderLink'
 import MiniLogo from './graphics/MiniLogo'
 
@@ -14,19 +15,22 @@ const Link = styled(HeaderLink)`
 `
 
 export default ({ pathname }) => (
-  <Box width={[1]}>
-    <Flex alignItems="center" justifyContent="space-between" flexWrap="wrap">
-      <Box p={[1 / 2]} m="auto">
+  <ContentContainer>
+    <Flex
+      alignItems="flex-start"
+      justifyContent="space-between"
+      flexWrap="wrap"
+    >
+      <Box p={[1 / 2]}>
         <MiniLogo />
       </Box>
-      <Box p={[1]} m="auto">
-        <Flex alignItems="center" justifyContent="space-between">
-          <Box m="auto" p={1} />
+      <Box p={[1]}>
+        <Flex width={1} alignItems="flex-end">
           <Box m="auto" p={1}>
             <Link pathname={pathname} to="/posts" text="posts" />
           </Box>
         </Flex>
       </Box>
     </Flex>
-  </Box>
+  </ContentContainer>
 )

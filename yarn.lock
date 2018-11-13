@@ -12823,7 +12823,7 @@ vinyl@^1.0.0:
     clone-stats "^0.0.1"
     replace-ext "0.0.1"
 
-vivus@^0.4.2:
+vivus@^0.4.4:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/vivus/-/vivus-0.4.4.tgz#34363eb833d5f6fe0b63a92cfccff14ad099ba44"
   integrity sha1-NDY+uDPV9v4LY6ks/M/xStCZukQ=
