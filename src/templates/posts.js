@@ -9,12 +9,6 @@ import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
 import formatDate from '../utils/formatDate'
 
-const Content = styled(ContentContainer)`
-  .gatsby-highlight {
-    padding: 2em;
-  }
-`
-
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
@@ -22,7 +16,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <Content>
+        <ContentContainer>
           <Helmet title={`${post.frontmatter.title}| ${siteTitle}`} />
           <Box width={[1]}>
             <h1
@@ -61,7 +55,7 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-        </Content>
+        </ContentContainer>
       </Layout>
     )
   }

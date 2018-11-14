@@ -1,9 +1,8 @@
 [build]
   command = "yarn run build"
   publish = "public"
+  YARN_VERSION = "1.12.3"
   
 [context.production]
   [environment]
     NODE_ENV = "production"
-    NODE_VERSION = "10.13.0"
-    YARN_VERSION = "1.12.3"
