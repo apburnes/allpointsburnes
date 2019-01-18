@@ -20,7 +20,7 @@ const Comp = ({ className, frontmatter }) => {
           my={1}
           py={[1, 2, 3]}
         >
-          <Box width={[1]} px={[1, 2]} pt={1} pb={2}>
+          <Box width={[1]} px={[2, 3]} pt={2} pb={2}>
             <Flex alignItems="center" justifyContent="space-between">
               <h4
                 style={{
@@ -42,7 +42,7 @@ const Comp = ({ className, frontmatter }) => {
               </p>
             </Flex>
           </Box>
-          <Box width={[1]} px={[1, 2]} pb={2}>
+          <Box width={[1]} px={[2, 3]} pb={2}>
             <p
               style={{
                 ...scale(-1 / 3),
@@ -73,6 +73,7 @@ const PostCard = styled(Comp)`
   }
   :hover .post-flex {
     border: 1px solid rgb(150, 150, 150);
+    box-shadow: 10px 10px 0px rgb(220, 220, 220);
   }
   .post-flex {
     border: 1px dashed rgb(200, 200, 200);
