@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex } from '@rebass/grid'
+import { Box, Flex } from 'reflexbox'
 
 export default ({ children }) => (
   <Box p={[1, 2]} width={1}>

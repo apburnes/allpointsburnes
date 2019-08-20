@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex } from '@rebass/grid'
+import { Box, Flex } from 'reflexbox'
 import styled from 'styled-components'
 import { rhythm } from '../utils/typography'
 

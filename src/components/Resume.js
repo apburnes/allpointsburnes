@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Box, Flex } from '@rebass/grid'
+import { Box, Flex } from 'reflexbox'
 import ResumeCard from './ResumeCard'
 
 const FilterComp = Comp => ({ data, k, v }) => {

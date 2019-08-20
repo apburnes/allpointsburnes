@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Flex } from '@rebass/grid'
+import { Box, Flex } from 'reflexbox'
 import ContentContainer from './ContentContainer'
 import HeaderLink from './elements/HeaderLink'
 import MiniLogo from './graphics/MiniLogo'
