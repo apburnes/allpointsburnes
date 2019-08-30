@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Flex } from '@rebass/grid'
+import { Flex } from 'reflexbox'
 
 const CardSection = Comp => ({ data, length }) => {
   const { edges } = data
