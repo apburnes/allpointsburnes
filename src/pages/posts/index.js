@@ -7,7 +7,7 @@ import CardsSection from '../../components/CardsSection'
 import PostCard from '../../components/PostCard'
 import 'prismjs/themes/prism-solarizedlight.css'
 
-const PostPage = props => {
+const PostPage = (props) => {
   const { allMarkdownRemark } = props.data
   const Posts = CardsSection(PostCard)
 

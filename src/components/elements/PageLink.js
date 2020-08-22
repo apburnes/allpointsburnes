@@ -19,12 +19,12 @@ LinkComp.propTypes = {
 const PageLink = styled(LinkComp)`
   text-decoration: none;
   font-weight: 200;
-  font-family: ${props =>
+  font-family: ${(props) =>
     props.fontFamily ? props.fontFamily : `Sutro, Arial, Sans Serif`};
-  color: ${props => (props.color ? props.color : `rgb(50,50,50)`)};
+  color: ${(props) => (props.color ? props.color : `rgb(50,50,50)`)};
   &:hover {
     text-decoration: none;
-    color: ${props => (props.hoverColor ? props.hoverColor : `#000`)};
+    color: ${(props) => (props.hoverColor ? props.hoverColor : `#000`)};
   }
 `
 

@@ -4,9 +4,9 @@ import styled from 'styled-components'
 import { Box, Flex } from 'reflexbox'
 import ResumeCard from './ResumeCard'
 
-const FilterComp = Comp => ({ data, k, v }) => {
+const FilterComp = (Comp) => ({ data, k, v }) => {
   const comps = data
-    .filter(i => i.node[k] === v)
+    .filter((i) => i.node[k] === v)
     .map((item, idx) => <Comp key={idx} {...item.node} />)
 
   return <div>{comps}</div>
