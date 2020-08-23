@@ -22,7 +22,7 @@ const Projects = ({ data }) => {
   return <ProjectsComponent data={data.allProjectsJson} />
 }
 
-export default props => (
+export default (props) => (
   <StaticQuery
     query={graphql`
       query IndexQuery {
@@ -70,7 +70,7 @@ export default props => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Layout location={props.location}>
         <ContentContainer>
           <Section name="about">

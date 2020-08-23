@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex } from 'reflexbox'
 
-const CardSection = Comp => ({ data, length }) => {
+const CardSection = (Comp) => ({ data, length }) => {
   const { edges } = data
   const len = length ? length : edges.length
   const comps = edges

@@ -6,7 +6,7 @@ import HeaderLink from './elements/HeaderLink'
 import MiniLogo from './graphics/MiniLogo'
 
 const Link = styled(HeaderLink)`
-  border-bottom: ${props => {
+  border-bottom: ${(props) => {
     const toPath = props.to.replace('/', '')
     const current = props.pathname.replace('/', '').replace('/', '')
 

@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Container from './Container'
 import Header from './Header'
 import HomeBanner from './HomeBanner'
-import 'prismjs/themes/prism-twilight.css'
+import 'prismjs/themes/prism.css'
 
 class TemplateWrapper extends Component {
   constructor(props) {

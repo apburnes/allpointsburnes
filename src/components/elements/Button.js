@@ -10,9 +10,10 @@ const Comp = ({ children, className, onClick }) => {
 }
 
 const Button = styled(Comp)`
-  padding: ${props => (props.padding ? props.padding : '10px')};
-  border: ${props => (props.border ? props.border : '1px solid black')};
-  border-radius: ${props => (props.borderRadius ? props.borderRadius : '5px')};
+  padding: ${(props) => (props.padding ? props.padding : '10px')};
+  border: ${(props) => (props.border ? props.border : '1px solid black')};
+  border-radius: ${(props) =>
+    props.borderRadius ? props.borderRadius : '5px'};
   :hover {
     transform: scale(1.1);
   }
