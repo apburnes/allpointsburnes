@@ -1,14 +1,14 @@
 [
   {
-    "name": "dtally",
-    "link": "https://dtally-3cbcf.firebaseapp.com/",
-    "description": "An application to track your bowel movements. Collect, map, and visualize data.",
+    "name": "Federalist",
+    "link": "https://federalist.18f.gov",
+    "description": "A static site hosting platform to build, launch, and manage government sites.",
     "type": "website"
   },
   {
-    "name": "foresteater",
-    "link": "http://foresteater.com/",
-    "description": "The hompepage for the band Foresteater",
+    "name": "cloud.gov",
+    "link": "https://cloud.gov/",
+    "description": "cloud.gov helps government agencies buy, build, and authorize modern cloud services.",
     "type": "website"
   },
   {

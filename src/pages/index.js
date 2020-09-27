@@ -6,7 +6,6 @@ import ContentContainer from '../components/ContentContainer'
 import Section from '../components/Section'
 import CardsSection from '../components/CardsSection'
 import Download from '../components/elements/Download'
-import Footer from '../components/Footer'
 import Resume from '../components/Resume'
 import PostCard from '../components/PostCard'
 import ProjectCard from '../components/ProjectCard'
@@ -73,20 +72,7 @@ export default (props) => (
     render={(data) => (
       <Layout location={props.location}>
         <ContentContainer>
-          <Section name="about">
-            <p
-              style={{
-                ...scale(0),
-                marginTop: rhythm(0),
-                lineHeight: rhythm(0.9),
-              }}
-            >
-              After a good stint along the Front Range, I am back residing in my
-              Sonoran Desert homeland. I studied urban planning and geographic
-              information systems but have parlayed my experiences from natural
-              resource geography into engineering. Currently, you can call me an
-              Innovations Specialist with 18F.
-            </p>
+          <Section>
             <p
               style={{
                 ...scale(0),
@@ -97,8 +83,8 @@ export default (props) => (
               I focus on helping government organizations build better tools for
               the public with open source software and transparent workflows.
               Some life goals are to continually learn, become fluent in
-              Portuguese (minha esposa é brasileira), build cool things, and
-              live by the ocean.
+              Portuguese (minha esposa é brasileira), build stuff, and avoid bad
+              weather.
             </p>
           </Section>
           <Section name="latest posts" to="/posts/">
@@ -114,7 +100,6 @@ export default (props) => (
               text="Download resume pdf"
             />
           </Section>
-          <Footer />
         </ContentContainer>
       </Layout>
     )}

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Box, Flex } from 'reflexbox'
 
-const Comp = ({ children, className, name, to }) => {
+const SectionComponent = ({ children, className, name, to }) => {
   const headerLink = () => {
     if (to) {
       return (
@@ -19,9 +19,11 @@ const Comp = ({ children, className, name, to }) => {
 
   return (
     <Flex alignItems="center" flexDirection="column" py={[1, 2, 3]}>
-      <Box className={className} py={1} width={[1]}>
-        {headerLink()}
-      </Box>
+      {name ? (
+        <Box className={className} py={1} width={[1]}>
+          {headerLink()}
+        </Box>
+      ) : null}
       <Box py={1} width={[1]}>
         {children}
       </Box>
@@ -29,14 +31,14 @@ const Comp = ({ children, className, name, to }) => {
   )
 }
 
-Comp.propTypes = {
+SectionComponent.propTypes = {
   children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   className: PropTypes.string,
   name: PropTypes.string,
   to: PropTypes.string,
 }
 
-const Section = styled(Comp)`
+const Section = styled(SectionComponent)`
   border-bottom: 2px solid black;
   h2 {
     margin: 0;

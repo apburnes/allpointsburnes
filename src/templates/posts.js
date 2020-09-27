@@ -8,56 +8,54 @@ import Layout from '../components/Layout'
 import { rhythm, scale } from '../utils/typography'
 import formatDate from '../utils/formatDate'
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+const BlogPostTemplate = ({ data, location }) => {
+  const post = data.markdownRemark
+  const siteTitle = get(data, 'site.siteMetadata.title')
 
-    return (
-      <Layout location={this.props.location}>
-        <ContentContainer>
-          <Helmet title={`${post.frontmatter.title}| ${siteTitle}`} />
-          <Box width={[1]}>
-            <h1
-              style={{
-                marginBottom: rhythm(0),
-              }}
-            >
-              {post.frontmatter.title}
-            </h1>
-          </Box>
-          <Box mb={1} pb={1} width={[1]}>
-            <p
-              style={{
-                ...scale(-0.75),
-                marginTop: rhythm(0),
-                color: 'rgb(150,150,150)',
-              }}
-            >
-              {formatDate(post.frontmatter.date)}
-            </p>
-          </Box>
-          <Box my={1} py={1} width={[1]}>
-            <div
-              style={{
-                ...scale(0),
-                display: 'block',
-                marginBottom: rhythm(1),
-                marginTop: rhythm(-1),
-                lineHeight: rhythm(0.75),
-              }}
-              dangerouslySetInnerHTML={{ __html: post.html }}
-            />
-          </Box>
-          <hr
+  return (
+    <Layout location={location}>
+      <ContentContainer>
+        <Helmet title={`${post.frontmatter.title}| ${siteTitle}`} />
+        <Box width={[1]}>
+          <h1
             style={{
-              marginBottom: rhythm(1),
+              marginBottom: rhythm(0),
             }}
+          >
+            {post.frontmatter.title}
+          </h1>
+        </Box>
+        <Box mb={1} pb={1} width={[1]}>
+          <p
+            style={{
+              ...scale(-0.75),
+              marginTop: rhythm(0),
+              color: 'rgb(150,150,150)',
+            }}
+          >
+            {formatDate(post.frontmatter.date)}
+          </p>
+        </Box>
+        <Box my={1} py={[4, 5]} width={[1]}>
+          <div
+            style={{
+              ...scale(0),
+              display: 'block',
+              marginBottom: rhythm(1),
+              marginTop: rhythm(-1),
+              lineHeight: rhythm(1.2),
+            }}
+            dangerouslySetInnerHTML={{ __html: post.html }}
           />
-        </ContentContainer>
-      </Layout>
-    )
-  }
+        </Box>
+        <hr
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        />
+      </ContentContainer>
+    </Layout>
+  )
 }
 
 export default BlogPostTemplate

@@ -4,7 +4,9 @@ import Helmet from 'react-helmet'
 import Container from './Container'
 import Header from './Header'
 import HomeBanner from './HomeBanner'
+import Footer from './Footer'
 import 'prismjs/themes/prism.css'
+import '../styles.css'
 
 class TemplateWrapper extends Component {
   constructor(props) {
@@ -22,7 +24,7 @@ class TemplateWrapper extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <Helmet
           title="all points burnes"
           meta={[
@@ -34,7 +36,8 @@ class TemplateWrapper extends Component {
           {this.getHeader()}
           {this.props.children}
         </Container>
-      </div>
+        <Footer />
+      </>
     )
   }
 }

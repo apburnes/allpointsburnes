@@ -15,10 +15,17 @@
   },
   {
     "type": "work",
+    "employer": "cloud.gov",
+    "position": "Platform Engineer",
+    "start": "March 2020",
+    "end": "Present"
+  },
+  {
+    "type": "work",
     "employer": "18F",
     "position": "Innovations Specialist",
     "start": "March 2018",
-    "end": "Present"
+    "end": "March 2020"
   },
   {
     "type": "work",

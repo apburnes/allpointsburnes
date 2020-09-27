@@ -19,15 +19,15 @@ const Comp = ({ className, edges }) => {
     <Flex className={className} flexWrap="wrap">
       <Box width={[1, 1, 1 / 2]} p={2}>
         <Flex alignItems="center" justifyContent="center">
-          Education
+          <h3>Professional</h3>
         </Flex>
-        <Cards data={edges} k="type" v="academic" />
+        <Cards data={edges} k="type" v="work" />
       </Box>
       <Box width={[1, 1, 1 / 2]} p={2}>
         <Flex alignItems="center" justifyContent="center">
-          Professional
+          <h3>Education</h3>
         </Flex>
-        <Cards data={edges} k="type" v="work" />
+        <Cards data={edges} k="type" v="academic" />
       </Box>
     </Flex>
   )
