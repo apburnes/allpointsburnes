@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Flex } from 'reflexbox'
 import styled from 'styled-components'
-import { rhythm } from '../utils/typography'
 import ContentContainer from './ContentContainer'
 
 const FooterComponent = ({ className }) => (
