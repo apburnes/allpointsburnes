@@ -26,10 +26,17 @@ class TemplateWrapper extends Component {
     return (
       <>
         <Helmet
-          title="all points burnes"
+          title="All points Burnes. Andrew Burnes"
           meta={[
-            { name: 'description', content: 'personal website' },
-            { name: 'keywords', content: 'blog, geography, mapping' },
+            {
+              name: 'description',
+              content: 'personal website, portfolio, thoughts',
+            },
+            {
+              name: 'keywords',
+              content:
+                'blog, technology, data, web development, product, geography, mapping',
+            },
           ]}
         />
         <Container>

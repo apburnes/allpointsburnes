@@ -1,6 +1,5 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { rhythm, scale } from '../utils/typography'
 import Layout from '../components/Layout'
 import ContentContainer from '../components/ContentContainer'
 import Section from '../components/Section'
@@ -72,21 +71,6 @@ export default (props) => (
     render={(data) => (
       <Layout location={props.location}>
         <ContentContainer>
-          <Section>
-            <p
-              style={{
-                ...scale(0),
-                marginTop: rhythm(0),
-                lineHeight: rhythm(0.9),
-              }}
-            >
-              I focus on helping government organizations build better tools for
-              the public with open source software and transparent workflows.
-              Some life goals are to continually learn, become fluent in
-              Portuguese (minha esposa é brasileira), build stuff, and avoid bad
-              weather.
-            </p>
-          </Section>
           <Section name="latest posts" to="/posts/">
             <Posts data={data} />
           </Section>
