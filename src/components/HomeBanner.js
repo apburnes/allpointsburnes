@@ -44,7 +44,11 @@ export default () => (
               fontSize={[16, 18, 20]}
               fontStyle="italic"
             >
-              (Tou aprendendo português também! 🇧🇷)
+              (Tou aprendendo português também!{' '}
+              <span role="img" aria-label="brasil flag">
+                🇧🇷
+              </span>
+              )
             </Span>
           </Text>
         </Box>
