@@ -80,7 +80,7 @@ export default (props) => (
           <Section name="resume">
             <Resume edges={data.allResumeJson.edges} />
             <Download
-              url="http://yadayadayadadocs.s3-us-west-2.amazonaws.com/resume/burnes-resume.pdf"
+              url="/public/resume/burnes-resume.pdf"
               text="Download resume pdf"
             />
           </Section>
