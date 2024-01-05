@@ -1,0 +1,121 @@
+---
+
+---
+
+<div class="hero min-h-screen">
+  <div class="hero-content flex-col lg:flex-row items-centerd lg:w-4/5">
+    <div class="text-center lg:text-left lg:w-1/2 prose">
+      <p class="text-3xl">
+        I'm <span class="font-bold">Andrew Burnes</span> and I help the federal
+        government build better technology with open source software.
+      </p>
+    </div>
+
+    <div
+      class="flex flex-col lg:w-1/2 p-8 sm:p-12 lg:py-24 items-center justify-center"
+    >
+      <div class="mx-auto mb-5 flex items-center justify-center w-full">
+        <svg
+          class="mx-auto h-[100px]"
+          viewBox="0 0 230 170"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            id="logo-rect-1"
+            x="60"
+            y="60"
+            width="20"
+            height="50"
+            fill="#7B92B2"></rect>
+          <rect
+            id="logo-rect-2"
+            x="60"
+            y="120"
+            width="20"
+            height="50"
+            fill="#7B92B2"></rect>
+          <rect id="logo-rect-4" x="150" width="20" height="50" fill="#7B92B2"
+          ></rect>
+          <rect
+            id="circle-1"
+            y="60"
+            width="50"
+            height="50"
+            rx="25"
+            fill="#7B92B2"></rect>
+          <rect
+            id="circle-2"
+            x="90"
+            y="60"
+            width="50"
+            height="50"
+            rx="25"
+            fill="#7B92B2"></rect>
+          <rect
+            id="logo-rect-3"
+            x="150"
+            y="60"
+            width="20"
+            height="50"
+            fill="#7B92B2"></rect>
+          <rect
+            id="circle-3"
+            x="180"
+            y="60"
+            width="50"
+            height="50"
+            rx="25"
+            fill="#7B92B2"></rect>
+        </svg>
+      </div>
+      <h1
+        id="hero-title"
+        class="m-5 text-2xl xl:text-3xl font-black min-h-[20px]"
+      >
+        all points burnes
+      </h1>
+    </div>
+  </div>
+</div>
+
+<style>
+  rect {
+    opacity: 0;
+    visibility: hidden;
+  }
+</style>
+
+<script>
+  import { animate, timeline } from "motion";
+
+  const h1 = document.querySelector("#hero-title");
+
+  const draw = (progress: number) => ({
+    opacity: progress,
+    visibility: "visible",
+  });
+
+  timeline([
+    ["#circle-1", draw(1), { duration: 0.6 }],
+    ["#circle-2", draw(1), { duration: 0.6 }],
+    ["#circle-3", draw(1), { duration: 0.6 }],
+    ["#logo-rect-1", draw(1), { duration: 0.2 }],
+    ["#logo-rect-2", draw(1), { duration: 0.2 }],
+    ["#logo-rect-3", draw(1), { duration: 0.2 }],
+    ["#logo-rect-4", draw(1), { duration: 0.2 }],
+  ]);
+
+  if (h1) {
+    animate(
+      (progress) => {
+        h1.innerHTML = `all points burnes`.slice(0, Math.floor(progress * 18));
+      },
+      {
+        duration: 0.8,
+        easing: "ease-out",
+        delay: 1.8,
+      }
+    );
+  }
+</script>

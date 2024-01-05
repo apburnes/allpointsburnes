@@ -1,0 +1,11 @@
+---
+interface Props {
+  py?: number;
+}
+
+const { py = 4 } = Astro.props;
+---
+
+<div class={`flex flex-col py-${py}`}>
+  <slot />
+</div>

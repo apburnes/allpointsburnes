@@ -1,0 +1,11 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<article class="prose grid place-items-center py-12">
+  <h2>{title}</h2>
+</article>

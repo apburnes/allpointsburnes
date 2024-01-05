@@ -1,0 +1,56 @@
+---
+import Container from "./Container.astro";
+
+interface Props {
+  basePath: string;
+  currentPage: number;
+  lastPage: number;
+  url: {
+    current: string;
+    next: string;
+    prev: string;
+  };
+}
+
+const { basePath, currentPage, lastPage, url } = Astro.props;
+---
+
+{
+  lastPage === 1 ? null : (
+    <Container>
+      <div class="flex flex-col justify-start items-center">
+        <div class="join">
+          {url?.prev && currentPage >= 3 && (
+            <a href={basePath} class="join-item btn btn-sm">
+              {1}
+            </a>
+          )}
+          {url?.prev && currentPage > 3 && (
+            <button disabled class="join-item btn btn-sm btn-disabled">...</button>
+          )}
+          {url?.prev && (
+            <a href={url.prev} class="join-item btn btn-sm">
+              {currentPage - 1}
+            </a>
+          )}
+          <a href={url.current} class="join-item btn btn-sm btn-active">
+            {currentPage}
+          </a>
+          {url?.next && (
+            <a href={url.next} class="join-item btn btn-sm">
+              {currentPage + 1}
+            </a>
+          )}
+          {url?.next && lastPage - currentPage > 2 && (
+            <button disabled class="join-item btn btn-sm btn-disabled">...</button>
+          )}
+          {url?.next && lastPage - currentPage >= 2 && (
+            <a href={`${basePath}/${lastPage}`} class="join-item btn btn-sm">
+              {lastPage}
+            </a>
+          )}
+        </div>
+      </div>
+    </Container>
+  )
+}

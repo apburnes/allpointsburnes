@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import Container from "../../components/Container.astro";
+import ContentItem from "../../components/ContentItem.astro";
+import Page from "../../layouts/Page.astro";
+import Pagination from "../../components/Pagination.astro";
+
+export async function getStaticPaths({ paginate }: { paginate: any }) {
+  const posts = (await getCollection("blog")).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
+
+  return paginate(posts, { pageSize: 16 });
+}
+
+interface Props {
+  page: {
+    data: any[];
+    currentPage: number;
+    lastPage: number;
+    url: {
+      current: string;
+      next: string;
+      prev: string;
+    };
+  };
+}
+
+const { page } = Astro.props;
+---
+
+<Page>
+  <Container>
+    <section class="w-full">
+      <ul class="w-full">
+        {
+          page?.data?.map((post) => (
+            <li class="py-2">
+              <ContentItem
+                {...post.data}
+                // collection={post.collection}
+                url={`/blog/${post.slug}`}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </Container>
+  <Pagination basePath="/blog" {...page} />
+</Page>

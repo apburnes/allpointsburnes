@@ -1,0 +1,66 @@
+[
+  {
+    "type": "academic",
+    "school": "Arizona State University",
+    "degree": "Masters of GIS",
+    "start": "Spring 2010",
+    "end": "Summer 2011",
+    "url": "https://sgsup.asu.edu/"
+  },
+  {
+    "type": "academic",
+    "school": "Arizona State University",
+    "degree": "Bachelors of Urban Planning",
+    "start": "Fall 2004",
+    "end": "Fall 2008",
+    "url": "https://www.asu.edu/"
+  },
+  {
+    "type": "work",
+    "employer": "cloud.gov Pages",
+    "position": "Lead Engineer",
+    "start": "July 2022",
+    "end": "Present",
+    "url": "https://pages.cloud.gov"
+  },
+  {
+    "type": "work",
+    "employer": "cloud.gov",
+    "position": "Platform Engineer",
+    "start": "March 2020",
+    "end": "July 2022",
+    "url": "https://cloud.gov"
+  },
+  {
+    "type": "work",
+    "employer": "18F",
+    "position": "Engineering Consultant",
+    "start": "March 2018",
+    "end": "March 2020",
+    "url": "https://18f.gsa.gov"
+  },
+  {
+    "type": "work",
+    "employer": "US Geological Survey",
+    "position": "GIS Architect",
+    "start": "September 2014",
+    "end": "March 2018",
+    "url": "https://www.usgs.gov/national-geospatial-technical-operations-center"
+  },
+  {
+    "type": "work",
+    "employer": "Natural Resource Conservation Service",
+    "position": "GIS Analyst",
+    "start": "April 2010",
+    "end": "August 2014",
+    "url": "https://www.nrcs.usda.gov/"
+  },
+  {
+    "type": "work",
+    "employer": "Todd Photographic",
+    "position": "Cartographer",
+    "start": "September 2009",
+    "end": "October 2010",
+    "url": "https://toddphoto.com/"
+  }
+]
