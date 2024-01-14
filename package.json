@@ -3,56 +3,19 @@
   "description": "Personl website built with GatsbyJS",
   "version": "1.0.1",
   "author": "Andrew Burnes",
-  "dependencies": {
-    "bluebird": "^3.5.5",
-    "date-fns": "^1.30.1",
-    "gatsby": "^2.24.47",
-    "gatsby-plugin-offline": "3.2.1",
-    "gatsby-plugin-react-helmet": "3.3.1",
-    "gatsby-plugin-sharp": "2.6.2",
-    "gatsby-plugin-styled-components": "3.3.1",
-    "gatsby-plugin-typography": "2.5.1",
-    "gatsby-remark-copy-linked-files": "2.3.2",
-    "gatsby-remark-prismjs": "3.5.1",
-    "gatsby-remark-responsive-iframe": "2.4.2",
-    "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
-    "gatsby-remark-smartypants": "2.3.1",
-    "gatsby-source-filesystem": "2.3.1",
-    "gatsby-transformer-json": "2.4.1",
-    "gatsby-transformer-remark": "2.8.7",
-    "gatsby-transformer-sharp": "2.5.2",
-    "lodash": "^4.17.19",
-    "prismjs": "1.25.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "react-is": "^16.13.1",
-    "react-typography": "^0.16.19",
-    "reflexbox": "^4.0.2",
-    "styled-components": "5.1.0",
-    "styled-system": "5.1.5",
-    "typography": "^0.16.19",
-    "typography-theme-sutro": "^0.16.19",
-    "vivus": "^0.4.4"
-  },
   "keywords": [
-    "gatsby",
     "personal site",
     "blog"
   ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "GATSBY_TELEMETRY_DISABLED=1 gatsby develop -p 8080 -H 0.0.0.0",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "serve": "gatsby build && gatsby serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "turbo run dev",
+    "deploy": "turbo run deploy",
+    "test": "turbo run test",
+    "build": "turbo run build"
   },
   "devDependencies": {
-    "@babel/types": "^7.11.0",
-    "babel-plugin-styled-components": "^1.11.1",
-    "prettier": "^2.0.5"
+    "turbo": "^1.11.2"
   }
 }

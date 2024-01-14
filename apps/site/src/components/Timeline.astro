@@ -1,0 +1,39 @@
+---
+import { type TimelineItems } from "../types";
+
+interface Props {
+  data: TimelineItems;
+}
+
+const { data } = Astro.props;
+---
+
+<ul
+  class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+>
+  {
+    data.map((item, index) => {
+      const startOrEnd = index % 2 ? "timeline-end" : "timeline-end md:timeline-start md:text-end";
+      const timelineColor = "bg-secondary";
+      const hrExists = data.length - 1 !== index;
+
+      return (
+        <>
+          <li>
+            <div class="timeline-middle">
+              <div class={`w-6 h-6 rounded-full ${timelineColor}`} />
+            </div>
+            <div class={`${startOrEnd} mb-10`}>
+              <time class="font-mono italic">{`${item.startYear} - ${item.endYear}`}</time>
+              <div class="text-lg font-black">{item.title}</div>
+              <a class="link link-primary" href={item.url}>
+                {item.subtitle}
+              </a>
+            </div>
+            {hrExists && <hr class={`${timelineColor}`} />}
+          </li>
+        </>
+      );
+    })
+  }
+</ul>

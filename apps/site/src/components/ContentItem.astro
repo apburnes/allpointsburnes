@@ -1,0 +1,34 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+import Row from "./Row.astro";
+
+interface Props {
+  heroImage?: string;
+  tags?: string[];
+  title: string;
+  description?: string;
+  pubDate: Date;
+  url: string;
+}
+
+const { tags, title, description, pubDate, url } = Astro.props;
+---
+
+<Row>
+  <div class="flex flex-col justify-start items-center">
+    <a class="link link-primary" href={url}>
+      <h2 class="card-title text-2xl">{title}</h2>
+    </a>
+    <p class="prose text-center text-lg mx-auto">{description}</p>
+    <FormattedDate date={pubDate} />
+    {
+      tags?.length && tags?.length > 0 && (
+        <div class="flex gap-2 flex-row flex-wrap py-4">
+          {tags.map((tag: string) => (
+            <div class="badge badge-accent">{tag}</div>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</Row>

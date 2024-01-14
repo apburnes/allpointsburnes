@@ -1,0 +1,58 @@
+<div class="flex flex-col w-full border-opacity-50">
+  <div class="divider">
+    <svg
+      id="divider-svg"
+      width="90"
+      height="31"
+      viewBox="0 0 90 31"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        id="divider-path"
+        d="M5 5.5L18.3333 25.5L31.6667 5.5L45 25.5L58.3333 5.5L71.6667 25.5L85 5.5"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
+  </div>
+</div>
+
+<style>
+  path {
+    stroke: oklch(var(--s));
+  }
+</style>
+
+<script>
+  import { animate } from "motion";
+  const svgPath = document.querySelector("#divider-path");
+
+  animate(
+    (progress) => {
+      const dValue = svgPath?.getAttribute("d");
+      const values = dValue?.split(" ").map((value, index) => {
+        if (index === 0) return value;
+
+        const coords = value.split("L");
+        const x = coords.length > 1 ? `L${coords[1]}` : "";
+
+        if (index % 2 === 0) {
+          return `${25.5 - 20 * progress}${x}`;
+        } else {
+          return `${5.5 + 20 * progress}${x}`;
+        }
+      });
+
+      if (values) {
+        svgPath?.setAttribute("d", values.join(" "));
+      }
+    },
+    {
+      duration: 5,
+      direction: "alternate",
+      easing: "linear",
+      repeat: Infinity,
+    }
+  );
+</script>

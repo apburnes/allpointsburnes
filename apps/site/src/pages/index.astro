@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content";
+import { academicResumeToTimeline, workResumeToTimeline } from "../utils";
+
+import Page from "../layouts/Page.astro";
+import Container from "../components/Container.astro";
+import ContentItem from "../components/ContentItem.astro";
+import Hero from "../components/Hero.astro";
+import DividerHorizontal from "../components/DividerHorizontal.astro";
+import Timeline from "../components/Timeline.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+
+const blog = (await getCollection("blog")).slice(0, 5);
+const resume = await getCollection("resume");
+const workTimelineData = workResumeToTimeline(resume[0].data);
+const academicTimelineData = academicResumeToTimeline(resume[0].data);
+---
+
+<Page>
+  <Hero />
+  <DividerHorizontal />
+  <Container>
+    <SectionTitle title="Latest posts" />
+    <section class="w-full">
+      <ul class="w-full">
+        {
+          blog?.map((post) => (
+            <li class="py-2">
+              <ContentItem
+                {...post.data}
+                url={`/blog/${post.slug}`}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </Container>
+  <DividerHorizontal />
+  <Container>
+    <SectionTitle title="Work history" />
+    <Timeline data={workTimelineData} />
+  </Container>
+  <Container>
+    <SectionTitle title="Education" />
+    <Timeline data={academicTimelineData} />
+  </Container>
+</Page>
