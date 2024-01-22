@@ -11,22 +11,7 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: [
-      // {
-      //   mytheme: {
-      //     primary: "#a5b4fc",
-      //     secondary: "#fde047",
-      //     accent: "#4f46e5",
-      //     neutral: "#202e2f",
-      //     "base-100": "#fffcf2",
-      //     info: "#2563eb",
-      //     success: "#22c55e",
-      //     warning: "#f97316",
-      //     error: "#ff4958",
-      //   },
-      // },
-      "corporate",
-    ],
+    themes: ["corporate"],
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };
