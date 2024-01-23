@@ -10,7 +10,7 @@
     "deploy": "bash ./ci/deploy.sh",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "vitest --coverage --no-watch"
+    "test": "NODE_ENV=test vitest --coverage --no-watch"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
@@ -26,6 +26,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@astrojs/node": "^8.0.0",
     "@tailwindcss/typography": "^0.5.10",
     "@vitest/coverage-v8": "^1.1.0",
     "daisyui": "^4.4.24",

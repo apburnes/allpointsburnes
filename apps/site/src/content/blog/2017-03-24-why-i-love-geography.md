@@ -3,6 +3,8 @@ title: 'Why I Love Geography'
 description: 'This is why I love geography and my opinion about its role in the future'
 pubDate: 'Mar 24 2017'
 heroImage: '/why-i-love-geography.png'
+tags:
+ - geography
 ---
 
 I've been working in geography field since 2009 and it has provided me the opportunity to work on a variety
