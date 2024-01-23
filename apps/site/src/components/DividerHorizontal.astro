@@ -9,7 +9,7 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        id="divider-path"
+        id={`divider-path`}
         d="M5 5.5L18.3333 25.5L31.6667 5.5L45 25.5L58.3333 5.5L71.6667 25.5L85 5.5"
         stroke-width="10"
         stroke-linecap="round"
@@ -26,33 +26,36 @@
 
 <script>
   import { animate } from "motion";
-  const svgPath = document.querySelector("#divider-path");
 
-  animate(
-    (progress) => {
-      const dValue = svgPath?.getAttribute("d");
-      const values = dValue?.split(" ").map((value, index) => {
-        if (index === 0) return value;
+  const svgPaths = document.querySelectorAll("#divider-path");
 
-        const coords = value.split("L");
-        const x = coords.length > 1 ? `L${coords[1]}` : "";
+  svgPaths?.forEach((svgPath) => {
+    animate(
+      (progress) => {
+        const dValue = svgPath?.getAttribute("d");
+        const values = dValue?.split(" ").map((value, index) => {
+          if (index === 0) return value;
 
-        if (index % 2 === 0) {
-          return `${25.5 - 20 * progress}${x}`;
-        } else {
-          return `${5.5 + 20 * progress}${x}`;
+          const coords = value.split("L");
+          const x = coords.length > 1 ? `L${coords[1]}` : "";
+
+          if (index % 2 === 0) {
+            return `${25.5 - 20 * progress}${x}`;
+          } else {
+            return `${5.5 + 20 * progress}${x}`;
+          }
+        });
+
+        if (values) {
+          svgPath?.setAttribute("d", values.join(" "));
         }
-      });
-
-      if (values) {
-        svgPath?.setAttribute("d", values.join(" "));
+      },
+      {
+        duration: 5,
+        direction: "alternate",
+        easing: "linear",
+        repeat: Infinity,
       }
-    },
-    {
-      duration: 5,
-      direction: "alternate",
-      easing: "linear",
-      repeat: Infinity,
-    }
-  );
+    );
+  });
 </script>

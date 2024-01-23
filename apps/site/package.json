@@ -20,7 +20,7 @@
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/tailwind": "^5.0.4",
     "@fontsource-variable/josefin-sans": "^5.0.19",
-    "astro": "^4.0.7",
+    "astro": "^4.2.1",
     "motion": "^10.16.4",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.3.3"

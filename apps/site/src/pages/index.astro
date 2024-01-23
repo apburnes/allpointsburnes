@@ -1,4 +1,6 @@
 ---
+export const prerender = true;
+
 import { getCollection } from "astro:content";
 import { academicResumeToTimeline, workResumeToTimeline } from "../utils";
 
@@ -26,10 +28,7 @@ const academicTimelineData = academicResumeToTimeline(resume[0].data);
         {
           blog?.map((post) => (
             <li class="py-2">
-              <ContentItem
-                {...post.data}
-                url={`/blog/${post.slug}`}
-              />
+              <ContentItem {...post.data} url={`/blog/${post.slug}`} />
             </li>
           ))
         }
