@@ -35,3 +35,12 @@ export type TimelineItem = {
 };
 
 export type TimelineItems = TimelineItem[];
+
+export type BlogContent = {
+  title: string;
+  description: string;
+  pubDate: Date | string;
+  updatedDate?: Date | string;
+  heroImage?: string;
+  tags?: string[];
+};

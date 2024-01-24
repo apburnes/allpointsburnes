@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { GET, POST } from "../../src/pages/api/v0/hello-world.ts";
+import { GET, POST } from "../../src/pages/api/hello-world.ts";
 
 describe("API: /api/v0/hello-world", () => {
   describe("GET", () => {
