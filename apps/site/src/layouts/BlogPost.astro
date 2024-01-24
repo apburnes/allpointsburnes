@@ -8,7 +8,8 @@ import Container from "../components/Container.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags } =
+  Astro.props;
 ---
 
 <html lang="en">
@@ -21,14 +22,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <main>
       <Container>
         <article>
-          <div class="hero-image p-4 sm:p-10 md:p-16 lg:p-24 mb-2 sm:mb-0 prose">
+          <div class="p-4 md:p-8 lg:p-10 mb-8 md:mb-14">
             {
               heroImage && (
                 <img width={1020} height={510} src={heroImage} alt="" />
               )
             }
           </div>
-          <div class="prose text-2xl">
+          <div class="prose text-xl">
             <div class="title">
               <h1>{title}</h1>
               <div class="date">
@@ -41,6 +42,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
                   )
                 }
               </div>
+              {
+                tags?.length && tags?.length > 0 && (
+                  <div class="flex gap-2 flex-row flex-wrap py-4">
+                    {tags.map((tag: string) => (
+                      <div class="badge badge-accent">{tag}</div>
+                    ))}
+                  </div>
+                )
+              }
               <hr />
             </div>
             <slot />

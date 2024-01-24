@@ -12,7 +12,9 @@ import DividerHorizontal from "../components/DividerHorizontal.astro";
 import Timeline from "../components/Timeline.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 
-const blog = (await getCollection("blog")).slice(0, 5);
+const blog = (await getCollection("blog"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 5);
 const resume = await getCollection("resume");
 const workTimelineData = workResumeToTimeline(resume[0].data);
 const academicTimelineData = academicResumeToTimeline(resume[0].data);
