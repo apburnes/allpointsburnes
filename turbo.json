@@ -1,19 +1,21 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "globalDependencies": ["**/.env.*local"],
-    "pipeline": {
-      "build": {
-        "dependsOn": ["^build"],
-        "outputs": [".next/**", "!.next/cache/**"]
-      },
-      "deploy": {},
-      "lint": {},
-      "dev": {
-        "cache": false,
-        "persistent": true
-      },
-      "test": {
-        "inputs": ["./**/*.tsx", "./**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
-      }
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "deploy": {
+      "env": ["CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"]
+    },
+    "lint": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "test": {
+      "inputs": ["./**/*.tsx", "./**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
     }
   }
+}
