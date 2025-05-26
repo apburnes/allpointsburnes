@@ -1,11 +1,22 @@
 ---
 interface Props {
   title: string;
+  link?: string;
+  linkText?: string;
 }
 
-const { title } = Astro.props;
+const { title, link, linkText } = Astro.props;
 ---
 
 <article class="prose grid place-items-center py-12">
-  <h2>{title}</h2>
+  <h2>
+    {title}
+  </h2>
+  {
+    link && linkText ? (
+      <a href={link} class="link link-primary text-sm">
+        {linkText}
+      </a>
+    ) : null
+  }
 </article>
