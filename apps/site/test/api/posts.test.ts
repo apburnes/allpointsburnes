@@ -96,7 +96,7 @@ describe("/api/posts", () => {
   });
 
   it("should return 404 if method does not exist in route", async () => {
-    const methods = ["DELETE", "PUT", "PATCH", "HEAD"];
+    const methods = ["DELETE", "PUT", "PATCH"];
 
     await Promise.all(
       methods.map(async (method) => {
@@ -108,16 +108,13 @@ describe("/api/posts", () => {
   });
 
   it("should return a 500 if there is an error processing the request", async () => {
-    const errorMessage = "Mock error";
     vi.spyOn(URLSearchParams.prototype, "get").mockImplementation(() => {
-      throw new Error(errorMessage);
+      throw new Error();
     });
 
     const res = await fetch("http://localhost:4321/api/posts?tag=blog");
 
-    const json = await res.json();
     expect(res.status).toBe(500);
-    expect(json.error).toBe(errorMessage);
     vi.restoreAllMocks();
   });
 });

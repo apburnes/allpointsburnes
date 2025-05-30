@@ -1,8 +1,8 @@
 import { defineConfig } from "astro/config";
 import node from "@astrojs/node";
 import cloudflare from "@astrojs/cloudflare";
-import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
+import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 
 let adapter;
@@ -18,5 +18,8 @@ export default defineConfig({
   output: "server",
   adapter,
   site: "https://allpointsburnes.com",
-  integrations: [mdx(), sitemap(), tailwind()],
+  integrations: [mdx(), sitemap()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
