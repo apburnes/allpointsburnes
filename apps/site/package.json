@@ -21,6 +21,7 @@
     "@fontsource-variable/josefin-sans": "^5.2.5",
     "@tailwindcss/vite": "^4.1.8",
     "astro": "^5.8.1",
+    "maplibre-gl": "^5.15.0",
     "motion": "^10.18.0",
     "tailwindcss": "^4.1.8",
     "typescript": "^5.8.3"

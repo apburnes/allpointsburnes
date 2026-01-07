@@ -25,11 +25,17 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.pnpm-store
 
 
 # environment variables
 .env
 .env.production
 
+# python
+__pycache__/
+.venv/
+
 # macOS-specific files
 .DS_Store
+data

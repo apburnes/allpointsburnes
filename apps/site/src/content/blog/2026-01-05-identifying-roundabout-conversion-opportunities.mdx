@@ -1,0 +1,127 @@
+---
+title: Identifying Roundabout Conversion Opportunities with OpenStreetMap
+description: Using OSM data to identify two-lane road intersections with traffic signals that could benefit from roundabout conversion in Phoenix, AZ.
+pubDate: "Jan 05 2026"
+heroImage: "/roundabout-intersections.png"
+tags: ["urban-planning", "gis", "open-data"]
+---
+
+import RoundaboutMap from "../../components/RoundaboutMap.astro";
+
+There is nothing worse than sitting at a red light on a quiet street with no one around.
+It's much better to travel a nice controlled flow instead of the
+stop go where people speed to the next stop. Roundabouts have become increasingly popular in urban planning for their
+ability to improve traffic flow, enhance pedestrian safety, and reduce long-term
+maintenance costs compared to traditional signalized intersections.
+But identifying which intersections are good candidates for conversion requires analyzing road networks, traffic patterns, and infrastructure data.
+
+I recently built a Python-based analysis tool using [OpenStreetMap](https://www.openstreetmap.org/) (OSM) data to identify intersections in the Phoenix metro area where two two-lane roads meet with traffic signals—prime candidates for roundabout conversion. This post walks through the problem, the iterative development process, and the challenges we encountered along the way.
+
+## The Problem
+
+The goal was straightforward: find all intersections in Phoenix where:
+
+1. Two two-lane roads intersect
+2. There is a traffic signal at the intersection
+3. The intersection could potentially benefit from roundabout conversion
+
+This analysis would help urban planners and transportation engineers
+prioritize intersection improvements based on infrastructure characteristics
+rather than just traffic volume data.
+
+## Visualizing the Results
+
+Let's not bury the lead. I've mapped out all of
+the identified intersections that could be ideal candidates for conversion
+and see what you think about this analysis with OpenStreetMap data. It came up with 256
+possible intersections for that could be ideal for a roundabout.
+
+<RoundaboutMap />
+
+## Initial Approach
+
+I started by querying OSM data via the [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) to:
+
+- Extract all roads with lane information
+- Filter to two-lane roads
+- Find intersections where two two-lane roads meet
+- Identify which intersections have traffic signals
+- Select signaled intersections that intersect with two-lane roads.
+
+The initial implementation used Python with `overpy` for Overpass queries, `shapely` for geometric operations, and `geopandas` for spatial analysis. The workflow seemed simple enough: query roads, filter, find intersections, filter by signals, analyze.
+
+## Problems Encountered
+
+### Rate Limiting and Server Load
+
+The first major issue was hitting Overpass API rate limits. When querying large areas like the Phoenix metro region,
+the API would return "Server load too high" errors. This required implementing retry logic with exponential backoff:
+
+### Two-Lane Road Identification
+
+Identifying two-lane roads in OSM proved more complex than expected.
+OSM data completeness varies, lane information can be tagged in multiple ways,
+and intersections can end up having more than two lanes. Think of a right and/or left
+turn lane just at the intersection. If you were to convert the intersection from a
+traffic signal to a roundabout, these turn lanes would become obsolete.
+
+The road line segment properties consists of four relevant fields:
+
+- `highway`: The type of road like `residential`, `tertiary`, `service`, etc.
+- `lanes`: The total number of lanes on the road.
+- `lanes:forward`: The total number lanes traveling in the forward direction
+- `lanes:backward`: The total number of lanes traveling in the opposite direction
+
+To identify road segments that meet my two-lane road criteria, I looked for the following:
+
+- Ignore any road segment with type `highway` equal to `service`. This means it is a road on private property. Like parking lots or driveway entrances
+- The road segment had a total of two lanes
+- If a road segment had a total of three or four lanes
+  - Take the difference between the `lanes` and `lanes:forward` and the difference between the `lanes:backward`
+  - If either of differences equal one, consider it a two-lane road.
+
+### Spatial Accuracy for Signal Detection
+
+Initially, we matched traffic signals to intersections by node ID. However, traffic signals in OSM aren't always tagged at the exact intersection node—they might be slightly offset. We improved accuracy by:
+
+1. Creating a 2-meter buffer around each traffic signal
+2. Checking which two-lane road LineStrings intersect with the buffer
+3. Only including signals that intersect with 3 or more roads (indicating a true intersection)
+
+### Processing Large Areas
+
+Querying the entire Phoenix metro area in one request was too large and would timeout. We solved this by breaking the bounding box into 2-mile square chunks:
+
+This chunking approach allowed us to:
+
+- Process each area independently
+- Save the chunk to GeoJSON for final aggregation
+- Handle failures gracefully (one chunk failing doesn't stop the entire analysis)
+- Distribute processing over time to respect API rate limits
+- Make the analysis more parallelizable in the future
+
+## Final Solution
+
+The refined workflow processes for the area of interest:
+
+1. Breakdown the area of interest into smaller, manageable chunks
+1. Query roads for the chunk
+1. Filter to two-lane roads using refined logic
+1. Query traffic signals for the chunk
+1. Spatially filter signals that intersect with two-lane roads (using a 2m buffer)
+1. Aggregate results from all chunks
+1. Deduplicate traffic singles by id
+1. Save the final results to GeoJSON
+
+This approach is more robust, handles large areas efficiently, and produces higher-quality results by using spatial queries rather than simple node matching.
+
+## Next Steps
+
+The analysis tool outputs GeoJSON files with all identified intersections, which can be:
+
+- Combined with traffic volume data to prioritize conversions
+- Used for cost-benefit analysis of roundabout projects
+- Integrated into transportation planning workflows
+
+The [code is available](https://github.com/apburnes/allpointsburnes/tree/main/apps/roundabout-intersections) in the project repository
+and can be adapted for other metropolitan areas or modified to include additional filtering criteria like proximity to schools, hospitals, or other high-priority locations.
