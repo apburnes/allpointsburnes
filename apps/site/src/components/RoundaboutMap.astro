@@ -1,0 +1,302 @@
+---
+// RoundaboutMap component for displaying intersection data on a MapLibre GL map
+import "maplibre-gl/dist/maplibre-gl.css";
+---
+
+<div class="relative w-full">
+  <div
+    id="roundabout-map"
+    class="w-full h-[600px] rounded-lg border border-base-300"
+  >
+  </div>
+  <div
+    class="absolute top-4 right-4 z-10 flex gap-1 bg-white rounded-lg shadow-lg p-1"
+  >
+    <button
+      id="map-type-street"
+      class="px-4 py-2 text-sm font-medium rounded-md bg-primary text-white transition-colors"
+    >
+      Street
+    </button>
+    <button
+      id="map-type-satellite"
+      class="px-4 py-2 text-sm font-medium rounded-md bg-gray-200 text-gray-700 transition-colors"
+    >
+      Satellite
+    </button>
+  </div>
+</div>
+
+<script>
+  import maplibregl from "maplibre-gl";
+
+  function initMap() {
+    // Ensure the map container exists
+    const mapContainer = document.getElementById("roundabout-map");
+    if (!mapContainer) {
+      console.error("Map container not found");
+      return;
+    }
+
+    // Initialize MapLibre GL map centered on Phoenix metro area
+    const map = new maplibregl.Map({
+      container: "roundabout-map",
+      style: {
+        version: 8,
+        sources: {
+          "osm-tiles": {
+            type: "raster",
+            tiles: [
+              "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            ],
+            tileSize: 256,
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          },
+          "satellite-tiles": {
+            type: "raster",
+            tiles: [
+              "https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYml6enVybnp6IiwiYSI6Im5Mc0c0T2MifQ.75qLKpYtgRVqTjFSGpDdhA",
+            ],
+            tileSize: 256,
+            attribution:
+              '<a href="https://www.mapbox.com/">&copy; Mapbox</a> by <a href="https://www.maxar.com/">&copy; Maxar</a>',
+          },
+        },
+        layers: [
+          {
+            id: "osm-tiles-layer",
+            type: "raster",
+            source: "osm-tiles",
+            minzoom: 0,
+            maxzoom: 19,
+          },
+          {
+            id: "satellite-tiles-layer",
+            type: "raster",
+            source: "satellite-tiles",
+            minzoom: 0,
+            maxzoom: 19,
+            layout: {
+              visibility: "none",
+            },
+          },
+        ],
+      },
+      center: [-112.07, 33.45], // [lng, lat] for MapLibre GL
+      zoom: 11,
+      fadeDuration: 0, // This is in order for the text and circles to move "as-one"
+    });
+
+    // Map type switching functionality
+    let currentMapType: "street" | "satellite" = "street";
+
+    const streetButton = document.getElementById("map-type-street");
+    const satelliteButton = document.getElementById("map-type-satellite");
+
+    function switchMapType(type: "street" | "satellite") {
+      if (type === currentMapType) return;
+      if (!map.loaded()) {
+        // Wait for map to load before switching
+        map.once("load", () => switchMapType(type));
+        return;
+      }
+
+      currentMapType = type;
+
+      if (type === "satellite") {
+        // Hide street layer, show satellite layer
+        map.setLayoutProperty("osm-tiles-layer", "visibility", "none");
+        map.setLayoutProperty("satellite-tiles-layer", "visibility", "visible");
+        // Update button styles
+        streetButton?.classList.remove("bg-primary", "text-white");
+        streetButton?.classList.add("bg-gray-200", "text-gray-700");
+        satelliteButton?.classList.remove("bg-gray-200", "text-gray-700");
+        satelliteButton?.classList.add("bg-primary", "text-white");
+      } else {
+        // Show street layer, hide satellite layer
+        map.setLayoutProperty("osm-tiles-layer", "visibility", "visible");
+        map.setLayoutProperty("satellite-tiles-layer", "visibility", "none");
+        // Update button styles
+        satelliteButton?.classList.remove("bg-primary", "text-white");
+        satelliteButton?.classList.add("bg-gray-200", "text-gray-700");
+        streetButton?.classList.remove("bg-gray-200", "text-gray-700");
+        streetButton?.classList.add("bg-primary", "text-white");
+      }
+    }
+
+    streetButton?.addEventListener("click", () => switchMapType("street"));
+    satelliteButton?.addEventListener("click", () =>
+      switchMapType("satellite")
+    );
+
+    // Fetch and display GeoJSON data
+    fetch("/roundabout-intersections.geojson")
+      .then((response) => response.json())
+      .then((data) => {
+        // Add GeoJSON source with clustering enabled
+        map.on("load", () => {
+          map.addSource("intersections", {
+            type: "geojson",
+            data: data,
+            cluster: true,
+            clusterMaxZoom: 14, // Max zoom to cluster points on
+            clusterRadius: 50, // Radius of each cluster when clustering points
+          });
+
+          // Add cluster circles layer
+          map.addLayer({
+            id: "clusters",
+            type: "circle",
+            source: "intersections",
+            filter: ["has", "point_count"],
+            paint: {
+              // Use step expressions to implement different circle sizes and colors
+              // Blue circles when point count is less than 10
+              // Yellow circles when point count is between 10 and 50
+              // Pink circles when point count is greater than or equal to 50
+              "circle-color": [
+                "step",
+                ["get", "point_count"],
+                "#00d3bb",
+                10,
+                "#f1f075",
+                50,
+                "#f28cb1",
+              ],
+              "circle-radius": [
+                "step",
+                ["get", "point_count"],
+                20,
+                10,
+                30,
+                50,
+                40,
+              ],
+            },
+          });
+
+          // Add cluster count labels
+          map.addLayer({
+            id: "cluster-count",
+            type: "symbol",
+            source: "intersections",
+            filter: ["has", "point_count"],
+            layout: {
+              "text-field": "{point_count_abbreviated}",
+              "text-font": ["Noto Sans Regular"],
+              "text-size": 12,
+            },
+          });
+
+          // Add unclustered points layer
+          map.addLayer({
+            id: "unclustered-point",
+            type: "circle",
+            source: "intersections",
+            filter: ["!", ["has", "point_count"]],
+            paint: {
+              "circle-color": "#00d3bb",
+              "circle-radius": 10,
+              "circle-stroke-width": 2,
+              "circle-stroke-color": "#ffffff",
+            },
+          });
+
+          // Inspect a cluster on click - zoom in
+          map.on("click", "clusters", async (e: any) => {
+            const features = map.queryRenderedFeatures(e.point, {
+              layers: ["clusters"],
+            });
+            const clusterId = features[0].properties.cluster_id;
+            const source = map.getSource(
+              "intersections"
+            ) as maplibregl.GeoJSONSource;
+            const zoom = await source.getClusterExpansionZoom(clusterId);
+            const geometry = features[0].geometry as GeoJSON.Point;
+            map.easeTo({
+              center: geometry.coordinates as [number, number],
+              zoom: zoom,
+            });
+          });
+
+          // When a click event occurs on an unclustered point, open a popup
+          map.on("click", "unclustered-point", (e: any) => {
+            const coordinates = e.features[0].geometry.coordinates.slice();
+            const props = e.features[0].properties;
+
+            // Ensure that if the map is zoomed out such that
+            // multiple copies of the feature are visible, the
+            // popup appears over the copy being pointed to.
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+              coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            // Create popup content showing only intersection_id
+            const intersectionId = props.intersection_id || "N/A";
+            const popupContent = `
+              <div style="padding: 8px; color: #000;">
+                <strong style="font-weight: bold; color: #000;">OSM Intersection Id:</strong> ${intersectionId}
+              </div>
+            `;
+
+            new maplibregl.Popup()
+              .setLngLat(coordinates as [number, number])
+              .setHTML(popupContent)
+              .addTo(map);
+          });
+
+          // Change cursor on hover for clusters
+          map.on("mouseenter", "clusters", () => {
+            map.getCanvas().style.cursor = "pointer";
+          });
+          map.on("mouseleave", "clusters", () => {
+            map.getCanvas().style.cursor = "";
+          });
+
+          // Change cursor on hover for unclustered points
+          map.on("mouseenter", "unclustered-point", () => {
+            map.getCanvas().style.cursor = "pointer";
+          });
+          map.on("mouseleave", "unclustered-point", () => {
+            map.getCanvas().style.cursor = "";
+          });
+
+          // Fit map bounds to show all markers
+          if (data.features.length > 0) {
+            const coordinates = data.features.map(
+              (feature: any) => feature.geometry.coordinates
+            );
+            const bounds = coordinates.reduce(
+              (bounds: any, coord: number[]) => {
+                return bounds.extend(coord);
+              },
+              new maplibregl.LngLatBounds(coordinates[0], coordinates[0])
+            );
+
+            map.fitBounds(bounds, {
+              padding: { top: 50, bottom: 50, left: 50, right: 50 },
+            });
+          }
+        });
+      })
+      .catch((error) => {
+        console.error("Error loading GeoJSON data:", error);
+      });
+  }
+
+  // Initialize map when DOM is ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initMap);
+  } else {
+    initMap();
+  }
+</script>
+
+<style>
+  #roundabout-map {
+    z-index: 0;
+  }
+</style>

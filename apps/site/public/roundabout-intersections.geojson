@@ -1,0 +1,4101 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9629258,
+          33.6636642
+        ]
+      },
+      "properties": {
+        "intersection_id": "2793583420",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.960175,
+          33.6636981
+        ]
+      },
+      "properties": {
+        "intersection_id": "3027719767",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.959949,
+          33.6636972
+        ]
+      },
+      "properties": {
+        "intersection_id": "3027744151",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.6701959,
+          33.3075606
+        ]
+      },
+      "properties": {
+        "intersection_id": "2263655583",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0040136,
+          33.5318283
+        ]
+      },
+      "properties": {
+        "intersection_id": "41671222",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9435067,
+          33.4729232
+        ]
+      },
+      "properties": {
+        "intersection_id": "41533175",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9696582,
+          33.4728048
+        ]
+      },
+      "properties": {
+        "intersection_id": "41745542",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9436276,
+          33.4729221
+        ]
+      },
+      "properties": {
+        "intersection_id": "2612966287",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9308716,
+          33.6243141
+        ]
+      },
+      "properties": {
+        "intersection_id": "2502872371",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9278294,
+          33.6257279
+        ]
+      },
+      "properties": {
+        "intersection_id": "2502872431",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.194556,
+          33.6034809
+        ]
+      },
+      "properties": {
+        "intersection_id": "42369697",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.7277229,
+          33.4300693
+        ]
+      },
+      "properties": {
+        "intersection_id": "41621172",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.710134,
+          33.4084845
+        ]
+      },
+      "properties": {
+        "intersection_id": "2715007967",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.89672,
+          33.6401606
+        ]
+      },
+      "properties": {
+        "intersection_id": "41763331",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8838206,
+          33.6538007
+        ]
+      },
+      "properties": {
+        "intersection_id": "349002510",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.6533145,
+          33.364779
+        ]
+      },
+      "properties": {
+        "intersection_id": "41501304",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.756863,
+          33.6020761
+        ]
+      },
+      "properties": {
+        "intersection_id": "41638782",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.181821,
+          33.5818661
+        ]
+      },
+      "properties": {
+        "intersection_id": "2271364907",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.859119,
+          33.353208
+        ]
+      },
+      "properties": {
+        "intersection_id": "41552186",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.813258,
+          33.335788
+        ]
+      },
+      "properties": {
+        "intersection_id": "42444475",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.820692,
+          33.33566
+        ]
+      },
+      "properties": {
+        "intersection_id": "42449160",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.824317,
+          33.3279639
+        ]
+      },
+      "properties": {
+        "intersection_id": "3230970588",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.824381,
+          33.3352827
+        ]
+      },
+      "properties": {
+        "intersection_id": "3363563717",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.820747,
+          33.3357401
+        ]
+      },
+      "properties": {
+        "intersection_id": "3363564024",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.813197,
+          33.3358636
+        ]
+      },
+      "properties": {
+        "intersection_id": "3363564033",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.806985,
+          33.324489
+        ]
+      },
+      "properties": {
+        "intersection_id": "4347678606",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.789692,
+          33.3560377
+        ]
+      },
+      "properties": {
+        "intersection_id": "41758198",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.680816,
+          33.322551
+        ]
+      },
+      "properties": {
+        "intersection_id": "9140923964",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.693783,
+          33.3505694
+        ]
+      },
+      "properties": {
+        "intersection_id": "2301260864",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0739,
+          33.5020673
+        ]
+      },
+      "properties": {
+        "intersection_id": "3812177712",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.828755,
+          33.4223244
+        ]
+      },
+      "properties": {
+        "intersection_id": "41576190",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8288,
+          33.4172668
+        ]
+      },
+      "properties": {
+        "intersection_id": "41597697",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.831499,
+          33.4129138
+        ]
+      },
+      "properties": {
+        "intersection_id": "41670823",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.826275,
+          33.4150134
+        ]
+      },
+      "properties": {
+        "intersection_id": "41747271",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.801036,
+          33.4151641
+        ]
+      },
+      "properties": {
+        "intersection_id": "41821710",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.802077,
+          33.4151591
+        ]
+      },
+      "properties": {
+        "intersection_id": "42199925",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.828888,
+          33.4151563
+        ]
+      },
+      "properties": {
+        "intersection_id": "1616937718",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.826274,
+          33.4151432
+        ]
+      },
+      "properties": {
+        "intersection_id": "1616937803",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.801035,
+          33.4153231
+        ]
+      },
+      "properties": {
+        "intersection_id": "1865627521",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.828931,
+          33.4172675
+        ]
+      },
+      "properties": {
+        "intersection_id": "3719219503",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.824316,
+          33.2989432
+        ]
+      },
+      "properties": {
+        "intersection_id": "3216025623",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8240149,
+          33.3134488
+        ]
+      },
+      "properties": {
+        "intersection_id": "3216922315",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.824214,
+          33.3134527
+        ]
+      },
+      "properties": {
+        "intersection_id": "3216922318",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1255825,
+          33.5603264
+        ]
+      },
+      "properties": {
+        "intersection_id": "41518575",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.083293,
+          33.3631592
+        ]
+      },
+      "properties": {
+        "intersection_id": "42006939",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.894607,
+          33.3639276
+        ]
+      },
+      "properties": {
+        "intersection_id": "4341929508",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.194919,
+          33.6543557
+        ]
+      },
+      "properties": {
+        "intersection_id": "41613969",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1990372,
+          33.6534989
+        ]
+      },
+      "properties": {
+        "intersection_id": "1529247918",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.077754,
+          33.4586557
+        ]
+      },
+      "properties": {
+        "intersection_id": "41601197",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0958127,
+          33.4459756
+        ]
+      },
+      "properties": {
+        "intersection_id": "41614151",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0801952,
+          33.4586655
+        ]
+      },
+      "properties": {
+        "intersection_id": "42452986",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.091261,
+          33.4586546
+        ]
+      },
+      "properties": {
+        "intersection_id": "3460326507",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.204105,
+          33.4084357
+        ]
+      },
+      "properties": {
+        "intersection_id": "340110195",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.203984,
+          33.4228324
+        ]
+      },
+      "properties": {
+        "intersection_id": "340283762",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.2040221,
+          33.4159951
+        ]
+      },
+      "properties": {
+        "intersection_id": "1445181826",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.186454,
+          33.4225422
+        ]
+      },
+      "properties": {
+        "intersection_id": "4263163626",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.943316,
+          33.5020488
+        ]
+      },
+      "properties": {
+        "intersection_id": "41533125",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9607906,
+          33.4945157
+        ]
+      },
+      "properties": {
+        "intersection_id": "41928101",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1771064,
+          33.6175456
+        ]
+      },
+      "properties": {
+        "intersection_id": "42192103",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.117212,
+          33.429574
+        ]
+      },
+      "properties": {
+        "intersection_id": "41554741",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.194795,
+          33.5818051
+        ]
+      },
+      "properties": {
+        "intersection_id": "3207271780",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.841571,
+          33.2953016
+        ]
+      },
+      "properties": {
+        "intersection_id": "41672090",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.84147,
+          33.2988993
+        ]
+      },
+      "properties": {
+        "intersection_id": "41672306",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.841421,
+          33.3023202
+        ]
+      },
+      "properties": {
+        "intersection_id": "1708720471",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.859122,
+          33.2987465
+        ]
+      },
+      "properties": {
+        "intersection_id": "3257735588",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.858924,
+          33.2987472
+        ]
+      },
+      "properties": {
+        "intersection_id": "3257735589",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.858925,
+          33.2988445
+        ]
+      },
+      "properties": {
+        "intersection_id": "3257735593",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8415715,
+          33.3005949
+        ]
+      },
+      "properties": {
+        "intersection_id": "8211289958",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.01269,
+          33.3996895
+        ]
+      },
+      "properties": {
+        "intersection_id": "3086903112",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.052283,
+          33.3049598
+        ]
+      },
+      "properties": {
+        "intersection_id": "41532018",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.061729,
+          33.2967001
+        ]
+      },
+      "properties": {
+        "intersection_id": "2082590591",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.052254,
+          33.305128
+        ]
+      },
+      "properties": {
+        "intersection_id": "2115193167",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.160259,
+          33.4877338
+        ]
+      },
+      "properties": {
+        "intersection_id": "42483061",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1777777,
+          33.5022069
+        ]
+      },
+      "properties": {
+        "intersection_id": "904360900",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1774808,
+          33.5022064
+        ]
+      },
+      "properties": {
+        "intersection_id": "1657960563",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.177765,
+          33.4877549
+        ]
+      },
+      "properties": {
+        "intersection_id": "1682746903",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.177676,
+          33.4950108
+        ]
+      },
+      "properties": {
+        "intersection_id": "4003696820",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.866929,
+          33.65645
+        ]
+      },
+      "properties": {
+        "intersection_id": "2403069998",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8666852,
+          33.6564862
+        ]
+      },
+      "properties": {
+        "intersection_id": "2403069999",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.98857,
+          33.6023936
+        ]
+      },
+      "properties": {
+        "intersection_id": "41680700",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.986167,
+          33.6048676
+        ]
+      },
+      "properties": {
+        "intersection_id": "41817848",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.982227,
+          33.6049522
+        ]
+      },
+      "properties": {
+        "intersection_id": "2495739295",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.988452,
+          33.6023294
+        ]
+      },
+      "properties": {
+        "intersection_id": "5214142660",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.988434,
+          33.6024091
+        ]
+      },
+      "properties": {
+        "intersection_id": "5214142661",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.936661,
+          33.4219091
+        ]
+      },
+      "properties": {
+        "intersection_id": "41714336",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.934969,
+          33.4220021
+        ]
+      },
+      "properties": {
+        "intersection_id": "41714339",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9124759,
+          33.4148601
+        ]
+      },
+      "properties": {
+        "intersection_id": "330683932",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9176983,
+          33.4148708
+        ]
+      },
+      "properties": {
+        "intersection_id": "330683937",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9205139,
+          33.4148773
+        ]
+      },
+      "properties": {
+        "intersection_id": "330683938",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9306617,
+          33.4147862
+        ]
+      },
+      "properties": {
+        "intersection_id": "330683942",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.934959,
+          33.4147529
+        ]
+      },
+      "properties": {
+        "intersection_id": "330683945",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.934955,
+          33.4146147
+        ]
+      },
+      "properties": {
+        "intersection_id": "330683964",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9176995,
+          33.4146345
+        ]
+      },
+      "properties": {
+        "intersection_id": "330683971",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.912339,
+          33.4146772
+        ]
+      },
+      "properties": {
+        "intersection_id": "330683977",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9366624,
+          33.4219915
+        ]
+      },
+      "properties": {
+        "intersection_id": "2860653270",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.934969,
+          33.4219161
+        ]
+      },
+      "properties": {
+        "intersection_id": "8269005072",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.71408,
+          33.5731763
+        ]
+      },
+      "properties": {
+        "intersection_id": "3748932196",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8340623,
+          33.4172839
+        ]
+      },
+      "properties": {
+        "intersection_id": "41605262",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.834091,
+          33.4129185
+        ]
+      },
+      "properties": {
+        "intersection_id": "42246623",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.848309,
+          33.4151193
+        ]
+      },
+      "properties": {
+        "intersection_id": "330667383",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.84831,
+          33.4149509
+        ]
+      },
+      "properties": {
+        "intersection_id": "330667456",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1601333,
+          33.5457298
+        ]
+      },
+      "properties": {
+        "intersection_id": "41505292",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1752022,
+          33.5313758
+        ]
+      },
+      "properties": {
+        "intersection_id": "1751734093",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0129153,
+          33.4439819
+        ]
+      },
+      "properties": {
+        "intersection_id": "42265400",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.03901,
+          33.4586488
+        ]
+      },
+      "properties": {
+        "intersection_id": "1584164112",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0303033,
+          33.4354446
+        ]
+      },
+      "properties": {
+        "intersection_id": "9902112256",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.859119,
+          33.32785
+        ]
+      },
+      "properties": {
+        "intersection_id": "41849004",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.847164,
+          33.33507
+        ]
+      },
+      "properties": {
+        "intersection_id": "5100203872",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.960176,
+          33.6635042
+        ]
+      },
+      "properties": {
+        "intersection_id": "41842912",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9601739,
+          33.6592407
+        ]
+      },
+      "properties": {
+        "intersection_id": "2793583179",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.959954,
+          33.6635042
+        ]
+      },
+      "properties": {
+        "intersection_id": "3027744150",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.091405,
+          33.4731692
+        ]
+      },
+      "properties": {
+        "intersection_id": "41584060",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1476888,
+          33.3775711
+        ]
+      },
+      "properties": {
+        "intersection_id": "2634764783",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.160276,
+          33.5603343
+        ]
+      },
+      "properties": {
+        "intersection_id": "2443132636",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0912258,
+          33.57124
+        ]
+      },
+      "properties": {
+        "intersection_id": "41583771",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.082539,
+          33.5712588
+        ]
+      },
+      "properties": {
+        "intersection_id": "41769493",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1082513,
+          33.567646
+        ]
+      },
+      "properties": {
+        "intersection_id": "42005148",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.099752,
+          33.5604372
+        ]
+      },
+      "properties": {
+        "intersection_id": "1646589434",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.099749,
+          33.5638985
+        ]
+      },
+      "properties": {
+        "intersection_id": "1646589444",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0042338,
+          33.4731095
+        ]
+      },
+      "properties": {
+        "intersection_id": "41793997",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.004222,
+          33.4878275
+        ]
+      },
+      "properties": {
+        "intersection_id": "41794021",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.995499,
+          33.4877655
+        ]
+      },
+      "properties": {
+        "intersection_id": "42255961",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.995565,
+          33.4730665
+        ]
+      },
+      "properties": {
+        "intersection_id": "42448265",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.7038129,
+          33.3070439
+        ]
+      },
+      "properties": {
+        "intersection_id": "3989476996",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.703746,
+          33.3014463
+        ]
+      },
+      "properties": {
+        "intersection_id": "3989477004",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.703936,
+          33.3071424
+        ]
+      },
+      "properties": {
+        "intersection_id": "3989481906",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.70841,
+          33.2925168
+        ]
+      },
+      "properties": {
+        "intersection_id": "4182621023",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.228917,
+          33.6029162
+        ]
+      },
+      "properties": {
+        "intersection_id": "41602206",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.887221,
+          33.5690445
+        ]
+      },
+      "properties": {
+        "intersection_id": "41543201",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0345477,
+          33.5056333
+        ]
+      },
+      "properties": {
+        "intersection_id": "2853954720",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1572134,
+          33.6470557
+        ]
+      },
+      "properties": {
+        "intersection_id": "41846478",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.056766,
+          33.5713314
+        ]
+      },
+      "properties": {
+        "intersection_id": "41587124",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0604642,
+          33.5713447
+        ]
+      },
+      "properties": {
+        "intersection_id": "41618885",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.738904,
+          33.3648393
+        ]
+      },
+      "properties": {
+        "intersection_id": "3692856366",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.738901,
+          33.3647245
+        ]
+      },
+      "properties": {
+        "intersection_id": "3692859047",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.738762,
+          33.3647252
+        ]
+      },
+      "properties": {
+        "intersection_id": "3692859052",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0042,
+          33.5025619
+        ]
+      },
+      "properties": {
+        "intersection_id": "41794049",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9953927,
+          33.5025082
+        ]
+      },
+      "properties": {
+        "intersection_id": "42403315",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8249959,
+          33.5896362
+        ]
+      },
+      "properties": {
+        "intersection_id": "41543056",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8250589,
+          33.5897486
+        ]
+      },
+      "properties": {
+        "intersection_id": "2097462862",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.072551,
+          33.4513806
+        ]
+      },
+      "properties": {
+        "intersection_id": "41607952",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0738291,
+          33.4524156
+        ]
+      },
+      "properties": {
+        "intersection_id": "331908918",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.073792,
+          33.454528
+        ]
+      },
+      "properties": {
+        "intersection_id": "331908923",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.073792,
+          33.454632
+        ]
+      },
+      "properties": {
+        "intersection_id": "331908924",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.062098,
+          33.4471007
+        ]
+      },
+      "properties": {
+        "intersection_id": "1501879041",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8907288,
+          33.4148871
+        ]
+      },
+      "properties": {
+        "intersection_id": "330675446",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.900408,
+          33.4292229
+        ]
+      },
+      "properties": {
+        "intersection_id": "2714317944",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.860514,
+          33.3931324
+        ]
+      },
+      "properties": {
+        "intersection_id": "3979182944",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9175863,
+          33.4803314
+        ]
+      },
+      "properties": {
+        "intersection_id": "41779537",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.921859,
+          33.4804222
+        ]
+      },
+      "properties": {
+        "intersection_id": "42367813",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9348019,
+          33.4729901
+        ]
+      },
+      "properties": {
+        "intersection_id": "42631455",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.926635,
+          33.4891793
+        ]
+      },
+      "properties": {
+        "intersection_id": "2396754651",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9175842,
+          33.4804209
+        ]
+      },
+      "properties": {
+        "intersection_id": "4455887788",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.963127,
+          33.3637464
+        ]
+      },
+      "properties": {
+        "intersection_id": "41501516",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.97083,
+          33.3642793
+        ]
+      },
+      "properties": {
+        "intersection_id": "2306298418",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.794463,
+          33.4152259
+        ]
+      },
+      "properties": {
+        "intersection_id": "42251434",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.796855,
+          33.4153565
+        ]
+      },
+      "properties": {
+        "intersection_id": "1865627522",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.917927,
+          33.4512709
+        ]
+      },
+      "properties": {
+        "intersection_id": "41565322",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9350152,
+          33.4583579
+        ]
+      },
+      "properties": {
+        "intersection_id": "41621117",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9306927,
+          33.4584156
+        ]
+      },
+      "properties": {
+        "intersection_id": "41621118",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9352133,
+          33.4511084
+        ]
+      },
+      "properties": {
+        "intersection_id": "10264086116",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.065122,
+          33.4293304
+        ]
+      },
+      "properties": {
+        "intersection_id": "2978697869",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.202792,
+          33.3918867
+        ]
+      },
+      "properties": {
+        "intersection_id": "41553279",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.181238,
+          33.377398
+        ]
+      },
+      "properties": {
+        "intersection_id": "5112582937",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.954961,
+          33.444576
+        ]
+      },
+      "properties": {
+        "intersection_id": "41576900",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.943313,
+          33.4377087
+        ]
+      },
+      "properties": {
+        "intersection_id": "42040306",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.953437,
+          33.4540081
+        ]
+      },
+      "properties": {
+        "intersection_id": "255913263",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9610422,
+          33.4453828
+        ]
+      },
+      "properties": {
+        "intersection_id": "331857576",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.956656,
+          33.4424919
+        ]
+      },
+      "properties": {
+        "intersection_id": "1507966926",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.956453,
+          33.442617
+        ]
+      },
+      "properties": {
+        "intersection_id": "1507966929",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.943269,
+          33.4375621
+        ]
+      },
+      "properties": {
+        "intersection_id": "2129498949",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.943463,
+          33.4376481
+        ]
+      },
+      "properties": {
+        "intersection_id": "3101178332",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.943427,
+          33.4375041
+        ]
+      },
+      "properties": {
+        "intersection_id": "3101178343",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.907786,
+          33.6431365
+        ]
+      },
+      "properties": {
+        "intersection_id": "257936073",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9063202,
+          33.6620566
+        ]
+      },
+      "properties": {
+        "intersection_id": "2276003615",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9062631,
+          33.6621677
+        ]
+      },
+      "properties": {
+        "intersection_id": "2276003617",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.907464,
+          33.6401392
+        ]
+      },
+      "properties": {
+        "intersection_id": "2502872649",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.907625,
+          33.6430366
+        ]
+      },
+      "properties": {
+        "intersection_id": "2502872724",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.907771,
+          33.6430338
+        ]
+      },
+      "properties": {
+        "intersection_id": "2502872730",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.907632,
+          33.6431075
+        ]
+      },
+      "properties": {
+        "intersection_id": "2502872748",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.091186,
+          33.5203423
+        ]
+      },
+      "properties": {
+        "intersection_id": "41584149",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.099798,
+          33.5345901
+        ]
+      },
+      "properties": {
+        "intersection_id": "3579667697",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.099701,
+          33.5422538
+        ]
+      },
+      "properties": {
+        "intersection_id": "3945181730",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0090575,
+          33.4146541
+        ]
+      },
+      "properties": {
+        "intersection_id": "41528598",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.030447,
+          33.4279322
+        ]
+      },
+      "properties": {
+        "intersection_id": "3011993944",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.169148,
+          33.3235714
+        ]
+      },
+      "properties": {
+        "intersection_id": "41653709",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.169148,
+          33.3234605
+        ]
+      },
+      "properties": {
+        "intersection_id": "2594803635",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.160606,
+          33.3137203
+        ]
+      },
+      "properties": {
+        "intersection_id": "7077000795",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.838659,
+          33.5918677
+        ]
+      },
+      "properties": {
+        "intersection_id": "41809822",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.924564,
+          33.494906
+        ]
+      },
+      "properties": {
+        "intersection_id": "41579899",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9174882,
+          33.502203
+        ]
+      },
+      "properties": {
+        "intersection_id": "41623238",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.934691,
+          33.5093911
+        ]
+      },
+      "properties": {
+        "intersection_id": "41647725",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.917484,
+          33.5094814
+        ]
+      },
+      "properties": {
+        "intersection_id": "41647744",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.924727,
+          33.4992328
+        ]
+      },
+      "properties": {
+        "intersection_id": "41686173",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.923942,
+          33.4948996
+        ]
+      },
+      "properties": {
+        "intersection_id": "41915111",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.921881,
+          33.4912866
+        ]
+      },
+      "properties": {
+        "intersection_id": "2396781878",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.921852,
+          33.4948825
+        ]
+      },
+      "properties": {
+        "intersection_id": "2396781883",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.924814,
+          33.4991222
+        ]
+      },
+      "properties": {
+        "intersection_id": "2396781894",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.926254,
+          33.5023481
+        ]
+      },
+      "properties": {
+        "intersection_id": "2396795216",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.930159,
+          33.5001303
+        ]
+      },
+      "properties": {
+        "intersection_id": "2400817262",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.921853,
+          33.4949909
+        ]
+      },
+      "properties": {
+        "intersection_id": "2486737391",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.923964,
+          33.495025
+        ]
+      },
+      "properties": {
+        "intersection_id": "2486737396",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.924561,
+          33.495027
+        ]
+      },
+      "properties": {
+        "intersection_id": "2486737399",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.913212,
+          33.5022196
+        ]
+      },
+      "properties": {
+        "intersection_id": "5034728873",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.787391,
+          33.5824808
+        ]
+      },
+      "properties": {
+        "intersection_id": "2404259747",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.900269,
+          33.5021338
+        ]
+      },
+      "properties": {
+        "intersection_id": "41623221",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.900235,
+          33.5093786
+        ]
+      },
+      "properties": {
+        "intersection_id": "3178266564",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1083721,
+          33.5168226
+        ]
+      },
+      "properties": {
+        "intersection_id": "42004260",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.099953,
+          33.5132393
+        ]
+      },
+      "properties": {
+        "intersection_id": "331954015",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.16908,
+          33.2904731
+        ]
+      },
+      "properties": {
+        "intersection_id": "41653724",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.073718,
+          33.4766401
+        ]
+      },
+      "properties": {
+        "intersection_id": "331945412",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.073929,
+          33.4838841
+        ]
+      },
+      "properties": {
+        "intersection_id": "331945454",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.073936,
+          33.47664
+        ]
+      },
+      "properties": {
+        "intersection_id": "331945462",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.073423,
+          33.3995597
+        ]
+      },
+      "properties": {
+        "intersection_id": "41556158",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.945638,
+          33.2964443
+        ]
+      },
+      "properties": {
+        "intersection_id": "42577127",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.027526,
+          33.3089563
+        ]
+      },
+      "properties": {
+        "intersection_id": "42001487",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8976654,
+          33.6182957
+        ]
+      },
+      "properties": {
+        "intersection_id": "2296401060",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8976727,
+          33.6181814
+        ]
+      },
+      "properties": {
+        "intersection_id": "2296401095",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8978067,
+          33.6182865
+        ]
+      },
+      "properties": {
+        "intersection_id": "2296401109",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8978148,
+          33.6181724
+        ]
+      },
+      "properties": {
+        "intersection_id": "2296401111",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.893219,
+          33.6183798
+        ]
+      },
+      "properties": {
+        "intersection_id": "2390873984",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.882689,
+          33.6116148
+        ]
+      },
+      "properties": {
+        "intersection_id": "2618771441",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8907424,
+          33.6182227
+        ]
+      },
+      "properties": {
+        "intersection_id": "5747768090",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.831518,
+          33.4005606
+        ]
+      },
+      "properties": {
+        "intersection_id": "41617662",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.192809,
+          33.5421245
+        ]
+      },
+      "properties": {
+        "intersection_id": "41604611",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.195014,
+          33.5312158
+        ]
+      },
+      "properties": {
+        "intersection_id": "2327705445",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.668944,
+          33.43701
+        ]
+      },
+      "properties": {
+        "intersection_id": "41531101",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.09111,
+          33.4292869
+        ]
+      },
+      "properties": {
+        "intersection_id": "2938640664",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.220394,
+          33.6417517
+        ]
+      },
+      "properties": {
+        "intersection_id": "2459979090",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.22039,
+          33.6416473
+        ]
+      },
+      "properties": {
+        "intersection_id": "2528483205",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.220314,
+          33.6525964
+        ]
+      },
+      "properties": {
+        "intersection_id": "2531809162",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.220442,
+          33.6525978
+        ]
+      },
+      "properties": {
+        "intersection_id": "2531809163",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.220312,
+          33.6527219
+        ]
+      },
+      "properties": {
+        "intersection_id": "2531811123",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.228985,
+          33.652684
+        ]
+      },
+      "properties": {
+        "intersection_id": "3337104669",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.229116,
+          33.6526779
+        ]
+      },
+      "properties": {
+        "intersection_id": "3337104670",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.2290533,
+          33.6527928
+        ]
+      },
+      "properties": {
+        "intersection_id": "3914171928",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.896287,
+          33.5238771
+        ]
+      },
+      "properties": {
+        "intersection_id": "11332347171",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.940071,
+          33.424345
+        ]
+      },
+      "properties": {
+        "intersection_id": "41529740",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.943346,
+          33.425449
+        ]
+      },
+      "properties": {
+        "intersection_id": "41563500",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.940067,
+          33.4273849
+        ]
+      },
+      "properties": {
+        "intersection_id": "41662581",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.940068,
+          33.4231956
+        ]
+      },
+      "properties": {
+        "intersection_id": "41662587",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9521874,
+          33.4146526
+        ]
+      },
+      "properties": {
+        "intersection_id": "41812231",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.952396,
+          33.4308936
+        ]
+      },
+      "properties": {
+        "intersection_id": "42001732",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9396045,
+          33.4159562
+        ]
+      },
+      "properties": {
+        "intersection_id": "316870186",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.947341,
+          33.4308229
+        ]
+      },
+      "properties": {
+        "intersection_id": "418955519",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.95242,
+          33.4309952
+        ]
+      },
+      "properties": {
+        "intersection_id": "1617023072",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9398765,
+          33.420491
+        ]
+      },
+      "properties": {
+        "intersection_id": "2625359008",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.93997,
+          33.4231952
+        ]
+      },
+      "properties": {
+        "intersection_id": "2625359013",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.939967,
+          33.4273845
+        ]
+      },
+      "properties": {
+        "intersection_id": "2625359021",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.939963,
+          33.4295773
+        ]
+      },
+      "properties": {
+        "intersection_id": "2625359028",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.940091,
+          33.4296678
+        ]
+      },
+      "properties": {
+        "intersection_id": "2714318022",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9433463,
+          33.4255304
+        ]
+      },
+      "properties": {
+        "intersection_id": "9928142350",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.995569,
+          33.4431143
+        ]
+      },
+      "properties": {
+        "intersection_id": "41229275",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0039896,
+          33.4433119
+        ]
+      },
+      "properties": {
+        "intersection_id": "42265408",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.0036877,
+          33.4480586
+        ]
+      },
+      "properties": {
+        "intersection_id": "331861527",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.9876946,
+          33.434501
+        ]
+      },
+      "properties": {
+        "intersection_id": "332474264",
+        "roads": [],
+        "road_ids": [],
+        "num_roads": 0
+      }
+    }
+  ]
+}
