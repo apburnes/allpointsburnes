@@ -1,6 +1,6 @@
 ---
-title: "Releasing make-cveasy: A CLI for AI-Powered Resume Customization"
-description: "Building a command-line tool to manage resumes with AI-powered customization, eliminating the pain of maintaining multiple resume versions for different job applications."
+title: "Releasing make-cveasy: A CLI to rethink the way you manage your resume"
+description: "Building a command-line tool to manage resumes with git, natural language processing, and LLMs. Easing the pain of maintaining a resume and its versions while rethinking the way you structure professional experience."
 pubDate: "Jan 27 2026"
 tags:
   - python
@@ -98,6 +98,7 @@ The `generate` command is the heart of make-cveasy. It takes all your structured
 Here's what happens under the hood: the tool loads all your resume data from the project structure (skills, experiences, success stories, projects, education, links—basically your entire professional life in markdown form). If you specify an application ID, it pulls in the corresponding job description and tells the AI to customize the resume, emphasizing the experiences and skills that match what the job is asking for.
 
 The AI gets:
+
 - Your complete resume data (the raw ingredients)
 - The job description (what we're optimizing for)
 - Instructions to create something professional that doesn't sound like a robot wrote it
@@ -118,6 +119,7 @@ The check process performs three types of analysis:
 3. **LLM Comparison**: Uses AI to perform a deeper analysis, comparing your resume against the job description. The AI identifies strengths, weaknesses, and specific recommendations for improvement.
 
 The check report includes:
+
 - Keyword coverage statistics
 - Skills match analysis
 - AI-generated recommendations
