@@ -16,6 +16,7 @@ coverage
 dist/
 # generated types
 .astro/
+.wrangler
 
 # dependencies
 node_modules/
@@ -26,7 +27,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 .pnpm-store
-
 
 # environment variables
 .env

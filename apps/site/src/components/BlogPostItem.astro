@@ -1,0 +1,48 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+import Row from "./Row.astro";
+
+interface Props {
+  heroImage?: string;
+  tags?: string[];
+  title: string;
+  description?: string;
+  pubDate: Date;
+  url: string;
+}
+
+const { heroImage, tags, title, description, pubDate, url } = Astro.props;
+---
+
+<Row>
+  <div class="flex flex-col md:flex-row items-center gap-6 w-full">
+    {
+      heroImage && (
+        <a class="w-full md:w-1/3 shrink-0" href={url}>
+          <img
+            class="w-full rounded-box object-contain h-48"
+            src={heroImage}
+            alt={title}
+            loading="lazy"
+          />
+        </a>
+      )
+    }
+    <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left gap-4 w-full">
+      <a class="link muted-link" href={url}>
+        <h2 class="card-title text-2xl muted-link">{title}</h2>
+      </a>
+      <p class="prose text-lg">{description}</p>
+      <FormattedDate date={pubDate} />
+      {
+        tags?.length && tags?.length > 0 && (
+          <div class="flex gap-2 flex-row flex-wrap py-2 justify-center md:justify-start">
+            {tags.map((tag: string) => (
+              <div class="badge badge-accent">{tag}</div>
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </div>
+</Row>

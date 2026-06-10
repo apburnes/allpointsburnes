@@ -26,8 +26,8 @@ const { data } = Astro.props;
             <div class={`${startOrEnd} mb-10`}>
               <time class="font-mono italic">{`${item.startYear} - ${item.endYear}`}</time>
               <div class="text-lg font-black">{item.title}</div>
-              <a class="link link-primary" href={item.url}>
-                {item.subtitle}
+              <a class="link muted-link" href={item.url}>
+                <span class="muted-link">{item.subtitle}</span>
               </a>
             </div>
             {hrExists && <hr class={`${timelineColor}`} />}

@@ -3,16 +3,16 @@ import type { BlogContent } from "../../src/types";
 export function serializedBlogContent({
   data: { title, description, pubDate, tags },
   collection,
-  slug,
+  id,
 }: {
   data: BlogContent;
   collection: string;
-  slug: string;
+  id: string;
 }) {
-  const url = `/${collection}/${slug}`;
+  const url = `/${collection}/${id}`;
   return {
     collection,
-    slug,
+    slug: id,
     url,
     title,
     description,
