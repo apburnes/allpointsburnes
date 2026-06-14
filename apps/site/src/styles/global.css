@@ -27,6 +27,7 @@
   --color-warning-content: oklch(14.247% 0.031 52.023);
   --color-error: oklch(62.013% 0.208 28.717);
   --color-error-content: oklch(12.402% 0.041 28.717);
+  --link-muted: rgb(123, 146, 178);
   --radius-selector: 1rem;
   --radius-field: 0.5rem;
   --radius-box: 1rem;
@@ -35,4 +36,13 @@
   --border: 1px;
   --depth: 0;
   --noise: 0;
+}
+
+.muted-link {
+  color: var(--link-muted);
+}
+
+.muted-link:hover {
+  color: var(--link-muted);
+  opacity: 0.85;
 }

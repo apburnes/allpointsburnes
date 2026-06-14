@@ -8,13 +8,13 @@ interface Props {
 const { title, link, linkText } = Astro.props;
 ---
 
-<article class="prose grid place-items-center py-12">
+<article class="prose max-w-none grid w-full place-items-center py-12 text-center">
   <h2>
     {title}
   </h2>
   {
     link && linkText ? (
-      <a href={link} class="link link-primary text-sm">
+      <a href={link} class="link muted-link text-sm">
         {linkText}
       </a>
     ) : null

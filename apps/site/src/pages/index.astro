@@ -6,7 +6,8 @@ import { academicResumeToTimeline, workResumeToTimeline } from "../utils";
 
 import Page from "../layouts/Page.astro";
 import Container from "../components/Container.astro";
-import ContentItem from "../components/ContentItem.astro";
+import BlogPostItem from "../components/BlogPostItem.astro";
+import WorkItem from "../components/WorkItem.astro";
 import Hero from "../components/Hero.astro";
 import DividerHorizontal from "../components/DividerHorizontal.astro";
 import Timeline from "../components/Timeline.astro";
@@ -15,6 +16,9 @@ import SectionTitle from "../components/SectionTitle.astro";
 const blog = (await getCollection("blog"))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 5);
+const work = (await getCollection("work"))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
 const resume = await getCollection("resume");
 const workTimelineData = workResumeToTimeline(resume[0].data);
 const academicTimelineData = academicResumeToTimeline(resume[0].data);
@@ -30,7 +34,22 @@ const academicTimelineData = academicResumeToTimeline(resume[0].data);
         {
           blog?.map((post) => (
             <li class="py-2">
-              <ContentItem {...post.data} url={`/blog/${post.slug}`} />
+              <BlogPostItem {...post.data} url={`/blog/${post.id}`} />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </Container>
+  <DividerHorizontal />
+  <Container widthClass="w-full xl:w-11/12 2xl:w-10/12">
+    <SectionTitle title="Selected work" link="/work" linkText="(all work)" />
+    <section class="w-full">
+      <ul class="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+        {
+          work?.map((item) => (
+            <li class="h-full">
+              <WorkItem {...item.data} pubDate={item.data.date} url={`/work/${item.id}`} />
             </li>
           ))
         }

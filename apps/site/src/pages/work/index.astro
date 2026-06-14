@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import Container from "../../components/Container.astro";
+import WorkItem from "../../components/WorkItem.astro";
+import Page from "../../layouts/Page.astro";
+import SectionTitle from "../../components/SectionTitle.astro";
+
+export const prerender = true;
+
+const work = (await getCollection("work")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<Page>
+  <Container widthClass="w-full xl:w-11/12 2xl:w-10/12">
+    <div class="text-center">
+      <SectionTitle title="Work" />
+    </div>
+    <section class="w-full">
+      <ul class="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+        {
+          work.map((item) => (
+            <li class="h-full">
+              <WorkItem {...item.data} pubDate={item.data.date} url={`/work/${item.id}`} />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </Container>
+</Page>

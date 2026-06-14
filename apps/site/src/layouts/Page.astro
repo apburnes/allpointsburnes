@@ -20,6 +20,27 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <slot name="footer">
       <Footer />
     </slot>
-    <script src="../lib/scripts/getTheme.ts"></script>
+    <script is:inline>
+      (() => {
+        try {
+          const themeToggle = document.querySelector(".theme-controller");
+          const savedTheme = localStorage.getItem("theme");
+          const theme = savedTheme || "dark";
+
+          document.documentElement.setAttribute("data-theme", theme);
+
+          if (!themeToggle) return;
+
+          themeToggle.checked = theme === "cmyk";
+          themeToggle.addEventListener("change", (event) => {
+            const nextTheme = event.target.checked ? "cmyk" : "dark";
+            document.documentElement.setAttribute("data-theme", nextTheme);
+            localStorage.setItem("theme", nextTheme);
+          });
+        } catch (error) {
+          console.error("Failed to access localStorage:", error);
+        }
+      })();
+    </script>
   </body>
 </html>
