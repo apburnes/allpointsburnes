@@ -24,7 +24,7 @@ describe("/api/posts", () => {
         fileName1,
         {
           title: title1,
-          description: "Test blog 1 description",
+          description: "Test blog 1 description with enough detail to satisfy the content SEO metadata requirements.",
           pubDate: "2021-01-01",
         },
         "Test blog 1 content"
@@ -33,7 +33,7 @@ describe("/api/posts", () => {
         fileName2,
         {
           title: title2,
-          description: "Test blog 2 description",
+          description: "Test blog 2 description with enough detail to satisfy the content SEO metadata requirements.",
           pubDate: "2021-01-02",
           tags: ["test", "blog", "integration"],
         },
@@ -43,7 +43,7 @@ describe("/api/posts", () => {
         fileName3,
         {
           title: title3,
-          description: "Test blog 3 description",
+          description: "Test blog 3 description with enough detail to satisfy the content SEO metadata requirements.",
           pubDate: "2021-01-03",
           tags: ["test", "blog"],
         },

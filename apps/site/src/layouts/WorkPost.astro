@@ -5,15 +5,40 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
+import { AUTHOR_NAME, SITE_URL } from "../consts";
 
 type Props = CollectionEntry<"work">["data"];
 
 const { title, description, date, heroImage, tags } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, SITE_URL).toString();
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  name: title,
+  headline: title,
+  description,
+  datePublished: date.toISOString(),
+  creator: {
+    "@type": "Person",
+    name: AUTHOR_NAME,
+    url: SITE_URL,
+  },
+  url: canonicalURL,
+  keywords: tags,
+};
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={heroImage}
+      type="article"
+      publishedTime={date}
+      tags={tags}
+      jsonLd={jsonLd}
+    />
   </head>
 
   <body>
@@ -43,7 +68,7 @@ const { title, description, date, heroImage, tags } = Astro.props;
                 <FormattedDate date={date} />
               </div>
               {
-                tags?.length && tags?.length > 0 && (
+                tags && tags.length > 0 && (
                   <div class="flex gap-2 flex-row flex-wrap py-4">
                     {tags.map((tag: string) => (
                       <div class="badge badge-accent">{tag}</div>

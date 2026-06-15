@@ -47,7 +47,7 @@ jobs:
 
       - name: Build app
         working-directory: apps/site
-        run: ./node_modules/.bin/astro check && ./node_modules/.bin/astro build
+        run: node ./scripts/generate-llms.mjs && ./node_modules/.bin/astro check && ./node_modules/.bin/astro build
 
       - name: Deploy apps
         working-directory: apps/site
