@@ -5,16 +5,43 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
+import { AUTHOR_NAME, SITE_URL } from "../consts";
 
 type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage, tags } =
   Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, SITE_URL).toString();
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description,
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate ?? pubDate).toISOString(),
+  author: {
+    "@type": "Person",
+    name: AUTHOR_NAME,
+    url: SITE_URL,
+  },
+  mainEntityOfPage: canonicalURL,
+  url: canonicalURL,
+  keywords: tags,
+};
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={heroImage}
+      type="article"
+      publishedTime={pubDate}
+      modifiedTime={updatedDate ?? pubDate}
+      tags={tags}
+      jsonLd={jsonLd}
+    />
   </head>
 
   <body>
@@ -43,7 +70,7 @@ const { title, description, pubDate, updatedDate, heroImage, tags } =
                 }
               </div>
               {
-                tags?.length && tags?.length > 0 && (
+                tags && tags.length > 0 && (
                   <div class="flex gap-2 flex-row flex-wrap py-4">
                     {tags.map((tag: string) => (
                       <div class="badge badge-accent">{tag}</div>

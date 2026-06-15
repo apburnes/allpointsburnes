@@ -1,6 +1,6 @@
 ---
 title: Workflow Automation for People Who Don’t Build Automation
-description: Deliverying scan and reporting automated workflows in cloud.gov Pages so non-engineering site owners can understand accessibility and security findings to take action.
+description: Delivering scan and reporting automated workflows in cloud.gov Pages so non-engineering site owners can understand accessibility and security findings to take action.
 heroImage: /work/zap-report-cropped.png
 date: 2025-01-10
 tags:

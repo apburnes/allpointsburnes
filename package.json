@@ -13,7 +13,9 @@
     "dev": "turbo run dev",
     "deploy": "turbo run deploy",
     "test": "turbo run test",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "generate:llms": "pnpm --filter apps-site generate:llms",
+    "check:llms": "pnpm --filter apps-site check:llms"
   },
   "devDependencies": {
     "turbo": "^2.9.16"

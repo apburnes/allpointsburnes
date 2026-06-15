@@ -34,7 +34,7 @@ const { heroImage, tags, title, description, pubDate, url } = Astro.props;
     <p class="prose text-center text-lg mx-auto">{description}</p>
     <FormattedDate date={pubDate} />
     {
-      tags?.length && tags?.length > 0 && (
+      tags && tags.length > 0 && (
         <div class="flex gap-2 flex-row flex-wrap py-4">
           {tags.map((tag: string) => (
             <div class="badge badge-accent">{tag}</div>
